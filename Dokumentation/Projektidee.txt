@@ -1,26 +1,132 @@
 === Projektidee Jennow, 2016-04-06 ===
 
-Leider habe ich bisher noch keine Idee für ein erstes Projekt.
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel sein.
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenÃ¼ber seinen Gegnern einen Vorteil zu
+verschaffen. Das Gewinnen ist abhÃ¤ngig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline
+besitzt.
 
-=== Feedback Alpers, 2016-04-07 ===
+#### Genauere ErklÃ¤rung des Computerspiels ####
 
-Kein Problem, dann erstellen Sie eine Projektbeschreibung für das Brettspiel Airlines Europe http://www.brettspiele-report.de/airlines-europe/
+Es gibt:
+-	ein Spielfeld mit vorgegebenen HeimatflughÃ¤fen, Fluglinien und Streckenlizenzen (angelehnt an die Karte Europas und das europÃ¤ische
+Flugnetz)
+--> Flugzeugsymbol auf einer Streckenlizenz symbolisiert den Kauf ebendieser
+-	Eine Bank, die Geld verleiht und auch bankrottgehen kann
+-	Pro Spieler ein Konto fÃ¼r Spielgeld in Mio + Ein Spielgeldkonto fÃ¼r die Bank 
+-	RegulÃ¤re Airlines (durch Farbe identifizierbar) + Position des Heimatflughafens auf dem Spielfeld + zugehÃ¶rige Aktien + zugehÃ¶rige
+  Anzahl Flugzeugsymbole, die zur VerfÃ¼gung stehen:
+-->	Anz. Aktien u. Flugzeugsymbole: 16x gelb, 15x blau, 14x violett, 13x rot, 11x schwarz, 10x braun, 9x grÃ¼n, 9x orange, 8x grau,
+    7x weiÃŸ
+-	"Air Abacus" = Airline ohne Flugzeuge (Aktienwert konstant) + 20 zugehÃ¶rige Aktien
+-	Bonusverbindungen fÃ¼r die 4 Airlines mit den wenigsten Aktien (Steigert den Wert der Airline im Aktienmarkt)
+-	Pro Spieler ein Konto fÃ¼r die Aktien in seinem Besitz
+-	Eine Aktienkurs-Anzeige in der sich die Airlines befinden und im Wert aufsteigen kÃ¶nnen
+-	Einen Aktienmarkt in dem immer 5 sichtbare Aktien und eine zufÃ¤llige Aktie zur VerfÃ¼gung stehen
+--> Wurde eine Aktie aus dem sichtbaren Markt genommen, wird sie sofort mit einer zufÃ¤lligen Aktie aufgefÃ¼llt
+-	Pro Spieler ein Konto fÃ¼r Siegpunkte fÃ¼r die Endwertung
+-	Drei Wertungsrunden
 
-=== Zweiter Aufgabenblock (identisch für alle Studierenden) ===
+Das Spiel wird mit 1-4 virtuellen Gegnern gespielt. Diese sollen automatisch fÃ¼r den Gewinn des Spiels kluge Entscheidungen treffen
+(Evtl. mit Schwierigkeitsgrad?) Der Spieler sucht sich zu Beginn die Anzahl der Gegner aus und dementsprechend Ã¤ndern sich einige
+Konditionen des Spiels:
+- Pro Spieler werden 30 Mio im Spiel verwendet 								                                 
+- Bei 4 Gegnern wird mit allen Airlines gespielt, 								                        
+  bei 3 fÃ¤llt Gelb weg, 												      
+  bei 2 fallen Gelb und Blau weg,											         
+  bei einem Gegner fallen Gelb, Blau und Violett weg
+
+#### Spielvorbereitungen ####
+
+- FÃ¼r den Spielablauf wird eine Reihenfolge der Spieler festgelegt.
+-	Der Startspieler wird per Zufall ausgesucht. Er erhÃ¤lt 1 Siegpunkt, der zweite Spieler 2, etc.
+-	Jeder Spieler erhÃ¤lt von dem verwendeten Geld 8 Mio, der Rest wird der Bank zugewiesen
+-	Jeder Spieler erhÃ¤lt 8 zufÃ¤llige Aktien, von denen er 2 (von verschiedenen Airlines) auswÃ¤hlt und fÃ¼r die anderen sichtbar macht
+-->	Hat der Spieler zufÃ¤llig nur Aktien einer Airline erhalten, wird der Prozess bei ihm wiederholt bis mindestens 2 verschiedene
+  Airlines vertreten sind.
+-	5 zufÃ¤llige Aktien werden in dem Aktienmarkt, sichtbar fÃ¼r alle Spieler, abgelegt
+-	Die restlichen Aktien werden spÃ¤ter zum AuffÃ¼llen des Aktienmarktes und fÃ¼r den Zufallserwerb einer Aktie benÃ¶tigt
+
+
+
+
+### Spielablauf ###
+
+ Jeder Spieler wÃ¤hlt der Reihe nach immer eine von 4 Aktionen aus:
+ 
+A)	Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
+
+- Die Strecken verbinden je zwei FlughÃ¤fen miteinander
+- FÃ¼r jede Strecke gibt es mehrere Lizenzen mit verschiedenen Preisen
+- Man kauft automatisch die gÃ¼nstigste verfÃ¼gbare Lizenz auf einer Strecke
+- Jede Airline beginnt bei ihrem Heimatflughafen
+- Hat eine Airline eine Lizenz fÃ¼r Verbindung zu einem Flughafen, kann sie von diesem alle durch Fluglinien mit ihm verbundenen 
+  FlughÃ¤fen ansteuern und fÃ¼r diese Strecken ebenfalls Lizenzen erwerben
+- Man muss keine Aktien einer Airline besitzen um eine Streckenlizenz fÃ¼r sie zu kaufen
+- Die Airline steigt in der Aktienkurs-Anzeige um die Anzahl der Punkte, die durch den Kaufpreis der Streckenlizenz geteilt durch Mio
+  angegeben wird.
+- Wird eine der 4 Bonusverbindungen mit der passenden Airline gekauft, erhÃ¤lt diese Airline zusÃ¤tzlich Bonuspunkte in der
+  Aktienkurs-Anzeige.
+- Als Bonus fÃ¼r Aktion A sucht der Spieler sich eine Aktie aus dem Aktienmarkt (inkl. Zufallsaktie) aus.
+
+B) Eigene Aktien fÃ¼r Gegner sichtbar machen und Dividende erhalten	
+- Entweder beliebig viele Aktien einer Airline oder jeweils eine Aktie von 2 Airlines 				
+- Bonus: 2 Mio pro sichtbar gemachter Aktie
+	
+C) â€Air Abacusâ€œ Aktien gegen eine eigene Aktie (sichtbar oder/und verdeckt) tauschen
+- Entweder 1 beliebige Aktie gegen 1 â€Air Abacusâ€œ Aktie							
+- Oder 3 beliebige Aktien gegen 2 â€Air Abacusâ€œ Aktien
+	
+D)  8 Mio von der Bank erhalten											
+- Hat die Bank nicht mehr genÃ¼gend Geld um das auszuzahlen, wird ein Rettungsfond eingerichtet:		
+- Jeder Spieler behÃ¤lt 8 Mio und gibt den Rest an die Bank							
+- Der Spieler, der das Geld von der Bank erfragt hat, erhÃ¤lt dieses nun aus dem Rettungsfond	
+
+### Wertung ###
+
+- Drei Mal im Spielverlauf findet eine Wertung nach ErfÃ¼llung folgender Bedingungen statt:	                                         
+  1: nachdem ein Viertel der Aktien im Aktienmarkt verwendet wurden 									
+  2: nachdem die HÃ¤lfte der Aktien im Aktienmarkt verwendet wurden 
+  3: wenn nur noch 10 unsichtbare Aktien im Aktienmarkt sind
+
+AusgelÃ¶st wird die Wertung, wenn ein Spieler nach dem ErfÃ¼llen der Bedingung versucht, 
+erneut eine Aktie aus dem Aktienmarkt zu nehmen.
+
+Aktienmarkt leeren
+- Jeder Spieler wÃ¤hlt eine der sichtbaren Aktien aus und nimmt sie in die eigenen Aktien auf.			           
+- Der Spieler der die Wertung ausgelÃ¶st hat, beginnt   							                                 
+- AbschlieÃŸend werden Ã¼brig gebliebene Aktien aus dem Spiel entfernt und der sichtbare 
+  Aktienmarkt wird wieder mit 5 Aktien aufgefÃ¼llt.
+
+Airlines werten
+- Pro Airline wird die Position der Spieler ermittelt, d.h. ob sie die meisten, zweitmeisten, usw. Aktien besitzen.
+- Dem Wert der Aktie wird eine bestimmte Anzahl an Siegpunkten fÃ¼r die jeweiligen Positionen zugeordnet.
+- Nach diese beiden Bedingungen erhalten die Spieler Siegpunkte.
+- Bei gleichen Positionen werden Positionen zusammengezÃ¤hlt, durch die betreffende Spieleranzahl geteilt, ggf. aufgerundet und
+  dementsprechend Siegpunkt-Chips verteilt.
+
+#### Spielende ####
+- Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+
+
+
+=== Zweiter Aufgabenblock (identisch fÃ¼r alle Studierenden) ===
 
 Sie haben jetzt gezeigt, dass Sie einfache Arbeiten mit einem Git-Repository beherrschen.
-Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was für Funktionalitäten Ihre Anwendung bieten soll.
-Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten können.
-In der Veranstaltung haben Sie außerdem gelernt, was Markup Languages sind.
+Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was fÃ¼r FunktionalitÃ¤ten Ihre Anwendung bieten
+soll.
+Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten kÃ¶nnen.
+In der Veranstaltung haben Sie auÃŸerdem gelernt, was Markup Languages sind.
 
-Die nächste Aufgabe besteht aus den folgenden Teilen:
+Die nÃ¤chste Aufgabe besteht aus den folgenden Teilen:
 
 1.) Lesen Sie mein Feedback durch und setzen Sie die beschriebenen Aufgaben um.
 
-Für die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wäre aber etwas zu viel des guten.
-Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhängen, dass Sie sie beendet haben.
+FÃ¼r die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wÃ¤re aber etwas zu viel des guten.
+Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhÃ¤ngen, dass Sie sie beendet
+haben.
 Bearbeiten Sie die Aufgaben auf jeden Fall in der vorgegebenen Reihenfolge.
-Und bearbeiten Sie eine Aufgabe nicht nachträglich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann ändern Sie bitte nichts an Aufgabe 1. nachträglich ab. Dafür wird später noch genug Zeit sein.)
+Und bearbeiten Sie eine Aufgabe nicht nachtrÃ¤glich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann Ã¤ndern Sie bitte nichts an
+Aufgabe 1. nachtrÃ¤glich ab. DafÃ¼r wird spÃ¤ter noch genug Zeit sein.)
 
 2.) Bennen Sie die strukturellen Elemente, aus denen Ihre Anwendung bestehen soll.
 Es ist dabei egal, ob es diese Elemente in HTML gibt.
@@ -30,54 +136,54 @@ Speichern Sie diese Aufstellung als HTML-Kommentar in einer Datei mit dem Namen
 
 strukt.html
 
-, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis für das erste HTML-Dokument werden wird.
+, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis fÃ¼r das erste HTML-Dokument werden wird.
 
-Wenn Sie noch unsicher sind: Strukturelle Elemente können alles mögliche sein:
+Wenn Sie noch unsicher sind: Strukturelle Elemente kÃ¶nnen alles mÃ¶gliche sein:
 - Tabellen
 - Listen
-- Schaltflächen
+- SchaltflÃ¤chen
 - Textfelder
 - Bildbereiche
 - Hintergrundmusik
-- Absätze
+- AbsÃ¤tze
 - ...
 
 In anderen Worten: Ein strukturelles Element ist etwas, das ein abgegrenzter Teil der Anwendung ist.
 Notieren Sie kurz, welche Funktion jedes der von Ihnen genannten Elemente haben soll.
 
 Hier einige Beispiele:
-- Schaltfläche (Nutzer können per Klick bestätigen, dass eine Eingabe abgeschickt werden soll.)
-- Textfeld für Namen (Nutzer können Ihren Nachnamen eintragen.)
-- Log-In-Maske (Bereich, in dem Nutzer sich einloggen können.)
+- SchaltflÃ¤che (Nutzer kÃ¶nnen per Klick bestÃ¤tigen, dass eine Eingabe abgeschickt werden soll.)
+- Textfeld fÃ¼r Namen (Nutzer kÃ¶nnen Ihren Nachnamen eintragen.)
+- Log-In-Maske (Bereich, in dem Nutzer sich einloggen kÃ¶nnen.)
 - - Teile der Log-In-Maske:
-- - Textfeld für Username
-- - Textfeld, das die Eingabe nicht anzeigt, fürs Passwort
-- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwählen, soll ein Menü erscheinen.)
-- - Menü für jedes Feld der Tabelle mit Texteinträgen (Eintrag für "Gebäude abreißen", "Feld kaufen")
+- - Textfeld fÃ¼r Username
+- - Textfeld, das die Eingabe nicht anzeigt, fÃ¼rs Passwort
+- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwÃ¤hlen, soll ein MenÃ¼ erscheinen.)
+- - MenÃ¼ fÃ¼r jedes Feld der Tabelle mit TexteintrÃ¤gen (Eintrag fÃ¼r "GebÃ¤ude abreiÃŸen", "Feld kaufen")
 - Hintergrundbild (Hier sollen einzelne Bilder als Diashow eingeblendet werden.)
 - Werbebanner
-- Schaltfläche für die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen können über diese Schaltfläche eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
+- SchaltflÃ¤che fÃ¼r die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen kÃ¶nnen Ã¼ber diese SchaltflÃ¤che eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
 
-3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgeführt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
+3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgefÃ¼hrt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
 
 Bsp.: Sie haben das Repository BerndStromberg. Dann folgen die zehn Repositories der Nutzer BlackWolf63, Cantinaband, CaptainWeasle, ColePfeiffer, CurvLietzau,
-DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fünf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon für mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fünf andere Accounts bis zum Anfang der Liste), dann geben Sie zusätzlich noch den Besitzern der letzten fünf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
+DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fÃ¼nf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon fÃ¼r mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fÃ¼nf andere Accounts bis zum Anfang der Liste), dann geben Sie zusÃ¤tzlich noch den Besitzern der letzten fÃ¼nf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
 
-Für die nächsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
-Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen üben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergänzen so neutral und höflich wie möglich zu formulieren, denn Unwissenheit und mangelndes Verständnis fürs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
+FÃ¼r die nÃ¤chsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
+Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen Ã¼ben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergÃ¤nzen so neutral und hÃ¶flich wie mÃ¶glich zu formulieren, denn Unwissenheit und mangelndes VerstÃ¤ndnis fÃ¼rs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
 
-Bitte erledigen Sie diese Aufgaben innerhalb der nächsten sieben Tage.
+Bitte erledigen Sie diese Aufgaben innerhalb der nÃ¤chsten sieben Tage.
 
-4.) Als nächstes greifen Sie auf die nach Ihrem Repository nachfolgenden fünf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hängen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
+4.) Als nÃ¤chstes greifen Sie auf die nach Ihrem Repository nachfolgenden fÃ¼nf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hÃ¤ngen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
 
-Lesen Sie sich die Projektidee durch und machen Sie sich ähnlich wie bei 2. einfache Stichpunkte über strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
+Lesen Sie sich die Projektidee durch und machen Sie sich Ã¤hnlich wie bei 2. einfache Stichpunkte Ã¼ber strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
 
-5.) Öffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. Ergänzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
+5.) Ã–ffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. ErgÃ¤nzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
 
-Abschließender Hinweis zu 4. und 5.:
+AbschlieÃŸender Hinweis zu 4. und 5.:
 
-Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
-Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
+Auch wenn das nirgends explizit steht sollen Sie Ã„nderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
+Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst spÃ¤ter wÃ¤hrend der Projektbearbeitung) einen merge durchfÃ¼hren mÃ¼ssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
 
-Viele Grüße,
+Viele GrÃ¼ÃŸe,
 Markus Alpers
