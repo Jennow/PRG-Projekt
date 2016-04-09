@@ -8,21 +8,22 @@ besitzt.
 #### Genauere Erklärung des Computerspiels ####
 
 Es gibt:
--	ein Spielfeld mit vorgegebenen Heimatflughäfen, Fluglinien und Streckenlizenzen (angelehnt an die Karte Europas und das europäische
-Flugnetz)
---> Flugzeugsymbol auf einer Streckenlizenz symbolisiert den Kauf ebendieser
+-	ein Spielfeld mit vorgegebenen Heimatflughäfen, Fluglinien und Streckenlizenzen (angelehnt an die Karte Europas und das
+	europäische Flugnetz)
+--> 	Flugzeugsymbol auf einer Streckenlizenz symbolisiert den Kauf ebendieser
 -	Eine Bank, die Geld verleiht und auch bankrottgehen kann
 -	Pro Spieler ein Konto für Spielgeld in Mio + Ein Spielgeldkonto für die Bank 
--	Reguläre Airlines (durch Farbe identifizierbar) + Position des Heimatflughafens auf dem Spielfeld + zugehörige Aktien + zugehörige
-  Anzahl Flugzeugsymbole, die zur Verfügung stehen:
+-	Reguläre Airlines (durch Farbe identifizierbar) + Position des Heimatflughafens auf dem Spielfeld + zugehörige Aktien 
+	+ zugehörige
+  	Anzahl Flugzeugsymbole, die zur Verfügung stehen:
 -->	Anz. Aktien u. Flugzeugsymbole: 16x gelb, 15x blau, 14x violett, 13x rot, 11x schwarz, 10x braun, 9x grün, 9x orange, 8x grau,
-    7x weiß
+	 7x weiß
 -	"Air Abacus" = Airline ohne Flugzeuge (Aktienwert konstant) + 20 zugehörige Aktien
 -	Bonusverbindungen für die 4 Airlines mit den wenigsten Aktien (Steigert den Wert der Airline im Aktienmarkt)
 -	Pro Spieler ein Konto für die Aktien in seinem Besitz
 -	Eine Aktienkurs-Anzeige in der sich die Airlines befinden und im Wert aufsteigen können
 -	Einen Aktienmarkt in dem immer 5 sichtbare Aktien und eine zufällige Aktie zur Verfügung stehen
---> Wurde eine Aktie aus dem sichtbaren Markt genommen, wird sie sofort mit einer zufälligen Aktie aufgefüllt
+--> 	Wurde eine Aktie aus dem sichtbaren Markt genommen, wird sie sofort mit einer zufälligen Aktie aufgefüllt
 -	Pro Spieler ein Konto für Siegpunkte für die Endwertung
 -	Drei Wertungsrunden
 
@@ -30,19 +31,19 @@ Das Spiel wird mit 1-4 virtuellen Gegnern gespielt. Diese sollen automatisch fü
 (Evtl. mit Schwierigkeitsgrad?) Der Spieler sucht sich zu Beginn die Anzahl der Gegner aus und dementsprechend ändern sich einige
 Konditionen des Spiels:
 - Pro Spieler werden 30 Mio im Spiel verwendet 								                                 
-- Bei 4 Gegnern wird mit allen Airlines gespielt, 								                        
-  bei 3 fällt Gelb weg, 												      
+- Bei 4 Gegnern wird mit allen Airlines gespielt, 								                        bei 3 fällt Gelb weg, 												      
   bei 2 fallen Gelb und Blau weg,											         
   bei einem Gegner fallen Gelb, Blau und Violett weg
 
 #### Spielvorbereitungen ####
 
-- Für den Spielablauf wird eine Reihenfolge der Spieler festgelegt.
+- 	Für den Spielablauf wird eine Reihenfolge der Spieler festgelegt.
 -	Der Startspieler wird per Zufall ausgesucht. Er erhält 1 Siegpunkt, der zweite Spieler 2, etc.
 -	Jeder Spieler erhält von dem verwendeten Geld 8 Mio, der Rest wird der Bank zugewiesen
--	Jeder Spieler erhält 8 zufällige Aktien, von denen er 2 (von verschiedenen Airlines) auswählt und für die anderen sichtbar macht
+-	Jeder Spieler erhält 8 zufällige Aktien, von denen er 2 (von verschiedenen Airlines) auswählt und für die anderen sichtbar
+	macht
 -->	Hat der Spieler zufällig nur Aktien einer Airline erhalten, wird der Prozess bei ihm wiederholt bis mindestens 2 verschiedene
-  Airlines vertreten sind.
+	Airlines vertreten sind.
 -	5 zufällige Aktien werden in dem Aktienmarkt, sichtbar für alle Spieler, abgelegt
 -	Die restlichen Aktien werden später zum Auffüllen des Aktienmarktes und für den Zufallserwerb einer Aktie benötigt
 
@@ -53,7 +54,7 @@ Konditionen des Spiels:
 
  Jeder Spieler wählt der Reihe nach immer eine von 4 Aktionen aus:
  
-A)	Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
+A) Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
 
 - Die Strecken verbinden je zwei Flughäfen miteinander
 - Für jede Strecke gibt es mehrere Lizenzen mit verschiedenen Preisen
