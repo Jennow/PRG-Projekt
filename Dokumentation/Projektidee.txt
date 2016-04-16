@@ -188,3 +188,7 @@ Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später währen
 
 Viele Grüße,
 Markus Alpers
+
+
+==Feedback Jonathan==
+Insgesammt sieht das sehr gut aus. Allerdings kann ich mir vorstellen, dass es ziemlich schwierig ist eine KI zu erstellen. Eventuell ist es da einfacher das ganze als Multiplayer zu konzipieren.
