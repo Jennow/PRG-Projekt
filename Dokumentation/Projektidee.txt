@@ -186,9 +186,13 @@ Abschließender Hinweis zu 4. und 5.:
 Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
 Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
 
+
 Viele Grüße,
 Markus Alpers
 
-
+== Notiz Jennow ==
+   Kommentierte Repositorys: julhe/PRGProjekt1  (17.04.2016)
+   Die anderen vier haben leider noch keine strukt.html Datei erstellt
+   
 ==Feedback Jonathan==
 Insgesammt sieht das sehr gut aus. Allerdings kann ich mir vorstellen, dass es ziemlich schwierig ist eine KI zu erstellen. Eventuell ist es da einfacher das ganze als Multiplayer zu konzipieren.
