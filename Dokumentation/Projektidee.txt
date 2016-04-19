@@ -192,7 +192,8 @@ Markus Alpers
 
 == Notiz Jennow ==
    Kommentierte Repositorys: julhe/PRGProjekt1  (17.04.2016)
-   Die anderen vier haben leider noch keine strukt.html Datei erstellt
+   			     korppikuolema/Projekt1 (19.04.2016)
+   Die anderen drei haben leider noch keine strukt.html Datei erstellt
    
 ==Feedback Jonathan==
 Insgesammt sieht das sehr gut aus. Allerdings kann ich mir vorstellen, dass es ziemlich schwierig ist eine KI zu erstellen. Eventuell ist es da einfacher das ganze als Multiplayer zu konzipieren.
