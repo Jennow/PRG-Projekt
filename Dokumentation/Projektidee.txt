@@ -1,4 +1,4 @@
-=== Projektidee Jennow, 2016-04-06 ===
+﻿=== Projektidee Jennow, 2016-04-06 ===
 
 Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel sein.
 In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu
@@ -197,3 +197,6 @@ Markus Alpers
    
 ==Feedback Jonathan==
 Insgesammt sieht das sehr gut aus. Allerdings kann ich mir vorstellen, dass es ziemlich schwierig ist eine KI zu erstellen. Eventuell ist es da einfacher das ganze als Multiplayer zu konzipieren.
+
+==Feedback Jaacii==
+Stimme da Jonathan zu. Klingt alles sehr gut, aber eine KI kann kompliziert werden. 
