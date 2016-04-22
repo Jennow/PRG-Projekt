@@ -194,8 +194,8 @@ Markus Alpers
    Kommentierte Repositorys: julhe/PRGProjekt1  (17.04.2016)
    			     korppikuolema/Projekt1 (19.04.2016)
    			     laGranada/ProjektA (22.04.2016)
-   			     joelkrauleidies/Projekt1
-   Die letzte Person hat leider noch keine strukt.html Datei erstellt
+   			     joelkrauleidies/Projekt1 (22.04.2016)
+   Die letzte Person, KingBradley97 hat leider noch keine strukt.html Datei erstellt
    
 ==Feedback Jonathan==
 Insgesammt sieht das sehr gut aus. Allerdings kann ich mir vorstellen, dass es ziemlich schwierig ist eine KI zu erstellen. Eventuell ist es da einfacher das ganze als Multiplayer zu konzipieren.
