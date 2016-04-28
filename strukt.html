@@ -6,9 +6,7 @@
 		<meta charset=utf-8>
 		<title>AirlinesEurope.html</title> 
 		<!-- Hinweis: Die Seitenverhältnisse der Tabellen können später vertauscht werden, wenn es zur besseren Übersicht dient-->
-		<!-- Konto der Bank wird nicht angezeigt, sondern im Hintergrund berechnet (Kontostand zu Beginn: (Anz. Gegner+1)  * 30 - (Anz. Gegner+1)*8)-->
-		<!-- Das Kürzel "konst" bedeutet, dass das Element während des ganzen Spielverlaufes angezeigt wird. 
-			Die anderen Elemente ploppen bei Bedarf auf und verschwinden dann wieder-->
+
 	</head>
  
 	<body>
@@ -18,95 +16,75 @@
 		</header>
 		
 		<main>
+			<Hintergrundmusik> 
+			<Soundeffekte> <!-- beim Auswählen einer Schaltfläche und anderen spielinternen Aktionen> -->
+			<LoginMaske> 
+				<Spieltitel>
+				<Eingabeaufforderung> <!-- Benutzername und Passwort werden abgefragt. -->
+				<Zwei Schaltflächen> <!-- "Login" und "Registrieren" -->
+				
+			<Startmenü> <!-- + Tabelle mit auswählbaren Schaltflächen -->
+				<Fortfahren> <!-- lässt Spieler aus mehreren Spielständen wählen -->
+				<Neues Spiel> <!-- Neuer Spielstand wir geladen-->
+					<Eingabeaufforderung> <!-- Spieler gibt die Anzahl der gewünschten Gegner ein -->
+					<Textfeld mit zwei Buttons> <!-- Benutzernamen von gewünschten Gegnern eingeben und/oder Zufallsgegner per Button auswählen. Bestätigen --> 
+				<Einstellungen> <!-- <Lautstärke der Hintergrundmusik und Soundeffekte einstellen -->
+				
 			
-			<Eingabeaufforderung> <!-- Spieler gibt die Anzahl der Gewünschten Gegner und den Schwierigkeitsgrad ein
-				-> Die Einstellungen werden festgelegt und das Spiel entsprechend geladen-->
-		
-			<Spielfeld> ) <!-- "konst" Bild des Spielfeldes (Karte Europas) 
-				-> Anzeige von Heimatflughäfen und verfügbaren Fluglinien
-				-> auswählbare Schaltflächen für den Kauf von Streckenlizenzen 
-					-> nach Kauf wird die Schaltfläche in der Farbe der Airline markiert
-				-> Anzeige von Bonusverbindungen (Airline+Punkte)
-			-->
 			
-			<Aktienmarkt> <!-- "konst" Tabelle mit 1x6 Feldern, die 5 sichtbare und eine zufällige Aktie anzeigt 
-			-->
-			<Aktienkurs> <!-- "konst" Anzeige (Tabelle) in der sich die Airlines befinden und im Wert aufsteigen können
-				-> Jeder Position in dieser Tabelle wird eine bestimmte Anzahl an Siegpunkten für den 1., 2., 3., 4.,5. Platz zugeordnet.
-			-->
-			<Anzeige verfügbarer Lizenzen> <!--"konst" Tabelle 11x2 zeigt Anzahl an verfügbaren Streckenlizenzen für die jeweiligen Airlines 
-					Airline       		Lizenzen verfügbar
-					blau				Anzahl
-					gelb  				Anzahl
-							   ...
-			-->		   
-			<Anzeige offener Aktien der Gegner> <!--"konst" Tabelle (Gegner Anzahlx(1+Anzahl offener Aktien)) 
-				-> Aktien sortiert nach ihrem Wert
+			<Spiel Hintergrund>	
+				<Bild> ) <!--  Bild des Spielfeldes (Karte Europas ) -->
+					<Markierugen> <!-- Heimatflughäfen, verfügbare Fluglinien, Bonusverbindungen -->
+					<Schaltflächen> <!-- für den Kauf von Streckenlizenzen -->
+			</Spiel Hintergrund>		
+			
+			<Spiel Vordergrund> 
+				<Tabelle 1x6> <!-- Aktienmarkt (5 sichtare, eine verdeckte Aktie) -->
+				<Tabelle 11x3> <!-- zeigt Anzahl an verfügbaren Streckenlizenzen für die jeweiligen Airlines 
+					Airline       		Lizenzen verfügbar		
+					 ...			  ...								-->		   
+				<Anzeige offener Aktien der Gegner> <!-- Tabelle (Gegner Anzahlx(1+Anzahl offener Aktien)) 
 					Gegner1:			2x blau		1x rot		4x "Air Abacus" 	...
 					Gegner2:	   		1x blau		5x "Air Abacus"
-										...
-			-->
-			
-			<Kontoübersicht> <!--"konst" Tabelle 2x2 
-				-> Geld:  				Betrag in Mio (zu Beginn 8)
-				   Siegpunkte:	 		Betrag in Punkten (zu Beginn abhängig von der Reihenfolge der Spieler (Spieler1: 1 Punkt Spieler2: 2 Punkte usw))
-			-->
-			
-			<Aktienübersicht> <!--"konst" Tabelle 22x3	zeigt Aktien an, die im Besitz des Spielers sind  
-				   Offene Aktien: 	blau			Anzahl
-							gelb			Anzahl
-									...
-							"Air Abacus"		Anzahl
+										...						-->
+				<Tabelle 2x2> <!--  Kontoübersicht für Geld und Siegpunkte -->
+				<Aktienübersicht> <!-- Tabelle mit 22x4 auswählbaren Schaltflächen zeigt Aktien an, die im Besitz des Spielers sind und deren Aktienkurs
+				   Offene Aktien: 	blau			Anzahl		Aktienkurs
+							gelb			Anzahl		Aktienkurs
+									...			   ...
+							"Air Abacus"		Anzahl		Aktienkurs
 										
 				   Verdeckte Aktien:	blau			Anzahl
 							gelb			Anzahl
 									...
 							"Air Abacus"		Anzahl
-										
-				  
-			-->
-			<Aktionsmenü> <!-- 4x1 Felder Tabelle, die erscheint wenn der Spieler an der Reihe ist, mit Texteinträgen, 
+																-->
+				<Aktionsmenü> <!-- 4x1 Felder Tabelle, die erscheint wenn der Spieler an der Reihe ist, mit Texteinträgen, 
 					die sich auswählen lassen und eine Aktion ausführen:
 					
-				-> "A) Streckenlizenz kaufen"
-					-> <Tabelle> 10 Felder: Lässt den Spieler zunächst eine Airline auswählen
-					-> Markiert auf der Karte die verfügbaren Streckenlizenzen mit jeweiligem Preis 
-					-> Spieler wählt eine aus
-					-> Vom Geldkonto des Spielers wird der Preis abgezogen und auf das Bankkonto übertragen
-					-> Die Airline steigt in der Aktienkurs-Anzeige um die Anzahl der Punkte
-					-> Hat eine Airline den Streckenabschnitt der zu ihr gehörenden Bonusverbindug gekauft, steigt die Airline 
-						in der Aktienkurs-Anzeige zusätzlich um die angegebene Anzahl an Punkten
+					->Schaltfläche A) "Streckenlizenz kaufen"
+						 -> <Tabelle> 10 Felder: Lässt den Spieler eine Airline auswählen
 					
-				-> "B) Aktien sichtbar machen"
-					-> <Aktienübersicht> Lässt den Spieler eine oder zwei Airlines auswählen
-					-> Wenn nur eine Airline gewählt wurde und der Spieler mehr als eine Aktie dieser Airline besitzt,
-						wird durch ein Textfeld abbgefragt, wie viele Aktien von der Airline offen gelegt werden sollen. 
-					-> Verschiebt die ausgewählten Aktien in der Aktienübersicht von "Verdeckte Aktien" zu "Offene Aktien"
-					-> Macht die ausgewählten Aktien für Gegner in der <Anzeige offener Aktien der Gegner> sichtbar
-					-> Für jede verschobene Aktie wird von dem <Bankkonto> ein Betrag von 2 Mio auf das <Geldkonto> des Spielers übertragen
+					-> Schaltfläche B) "Aktien sichtbar machen"
+						-> <Textfeld> fragt ab, wie viele Aktien von der Airline offen gelegt werden sollen. 
+						-> <Aktienübersicht> Lässt den Spieler eine oder zwei Airlines auswählen
 					
-				-> "C) Air Abacus (AA) Aktie ertauschen"
-					-> Tabelle mit 2 auswählbaren Feldern fragt ab, ob eine eigene gegen eine AA oder drei eigene gegen zwei AA Aktien getauscht werden sollen
-					-> <Aktienübersicht> Lässt den Spieler eine oder drei Airlines auswählen.
-					-> Die ausgewählten Aktien verschwinden aus dem Spiel und werden durch eine oder zwei AA Aktien ersetzt.
 					
-				-> "D) Geld von der Bank einfordern"
-					-> 8 Mio werden vom <Bankkonto> auf das <Geldkonto> des Spielers übertragen 
-					-> Ist auf dem <Bankkonto> , nicht genügend Geld, werden wieder die Anfangskontostände der Bank und der Spieler hergestellt
-					-> Anschließend erhält der Spieler, der D) gewählt hatte 8 Mio von der Bank
-			-->
-			<Wertungsrunde> <!-- Anzeige unterbricht das Spiel (Kommt drei mal vor, siehe Dokumentation.txt, #### Wertung ####)
-					-> <Aktienmarkt> lässt die Spieler der Reihe nach eine der sichtbaren Aktien wählen
-					-> restliche sichtbare Aktien werden aus dem Spiel entfernt
-					-> 5 neue Aktien im <Aktienmarkt> werden sichtbar gemacht
-					-> Spieler werden bewertet und erhalten entsprechend viele Punkte auf ihr Siegpunkt Konto
-			-->
+					->Schaltfläche C) "Air Abacus (AA) Aktie ertauschen"
+						-> <Tabelle mit 2 Radio Buttons> entweder eine eigene gegen eine AA oder drei eigene gegen zwei AA Aktien tauschen
+						-> <Aktienübersicht> Lässt den Spieler eine oder drei Airlines auswählen.
+					
+					->Schaltfläche D) "Geld von der Bank einfordern"							-->
+					
+				<Wertungsanzeige> <!-- Tabelle Spielerazahlx2 Aufzeigen der Punkteverteilung nach der jeweiligen Wertungsrunde -->
 			
-			<Schlussanzeige> <!-- Nach der dritten <Wertungsrunde> wird eine Tabelle((Gegneranzahl+1)x3) angezeigt, die die Spieler,
-				ihre Siegpunkte und die Anzahl ihrer AA Aktien auflistet. 
-				-> Der Spieler mit den meisten Siegpunkten ist ganz oben
-				-> Haben zwei Spieler gleich viele Siegpunkte, ist der weiter oben, der mehr AA Aktien besitzt
-			-->
+				<Schlussanzeige> 
+					<Überschrift> <!-- Informiert Spieler, ob er gewonnen hat -->
+					<Tabelle((Gegneranzahl+1)x3)> <!-- listet die Spieler, ihre Siegpunkte und die Anzahl ihrer AA Aktien auf. -->
+					<2 Schaltflächen> <!-- "Ende" und "Neues Spiel" -->
+					
+			</SpielVordergrund>	
+			
 		</main>
 		
 		<aside>
