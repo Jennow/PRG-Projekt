@@ -8,12 +8,12 @@ Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, d
 
 Im Hintergrund befindet sich das Spielfeld, das die Karte Europas zeigt, auf der sich Flugzeuge fortbewegen und so den Wert der
 zugehörigen Airline steigern können. Die Strecken verbinden je zwei Flughäfen miteinander. Für jede Strecke gibt es mehrere
-Flugizenzen mit verschiedenen Preisen. Jede Airline beginnt bei ihrem Heimatflughafen.
+Fluglizenzen mit verschiedenen Preisen. Jede Airline beginnt bei ihrem Heimatflughafen.
 
 Im Vordergrund sieht der Spieler den Aktienmarkt, Übersichten über die Aktien, die sich in seinem
 Besitz befinden und über diejenigen, die die Gegner sichtbar ausgelegt haben. Außerdem wird ihm noch sein Kontostand (Geld und 
-Siegpunkte) angezeigt.Im Spielverlauf gibt es regelmäßig Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden, je nach 
-Anzahl und Wert der Aktien, die sie besitzen. 
+Siegpunkte) und das Aktionsmenü angezeigt. Im Spielverlauf gibt es regelmäßig Wertungsrunden, in denen Siegpunkte an die Spieler 
+verteilt werden, je nach Anzahl und Wert der Aktien, die sie besitzen. 
 
 Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das
 Spiel nicht so lange dauert.Das Spiel kann mit Freunden oder mit fremden Mitspielern gespielt werden.
