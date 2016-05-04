@@ -1,6 +1,6 @@
 ﻿=== Projektidee Jennow, 2016-04-06 ===
 
-Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel sein.
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
 
 In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber
 seinen Gegnern einen Vorteil zu verschaffen. 
@@ -12,51 +12,24 @@ Fluglizenzen mit verschiedenen Preisen. Jede Airline beginnt bei ihrem Heimatflu
 
 Im Vordergrund sieht der Spieler den Aktienmarkt, Übersichten über die Aktien, die sich in seinem
 Besitz befinden und über diejenigen, die die Gegner sichtbar ausgelegt haben. Außerdem wird ihm noch sein Kontostand (Geld und 
-Siegpunkte) und das Aktionsmenü angezeigt. Im Spielverlauf gibt es regelmäßig Wertungsrunden, in denen Siegpunkte an die Spieler 
-verteilt werden, je nach Anzahl und Wert der Aktien, die sie besitzen. 
+Siegpunkte) und das Aktionsmenü angezeigt. Zur Platzersparnis (besonders auf Smartphones) erscheinen einige der Anzeigen erst nach dem
+Klick auf einen zugehörigen Button. Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden,
+je nach Anzahl und Wert der Aktien, die sie besitzen. 
 
 Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das
 Spiel nicht so lange dauert.Das Spiel kann mit Freunden oder mit fremden Mitspielern gespielt werden.
 Zu Beginn erhält jeder Spieler ein Startkapital und Aktien. Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
 
 ### Spielablauf ###
-
- Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
+Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
  
 A) Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
-
-- Man kauft automatisch die günstigste verfügbare Lizenz auf einer Strecke
-- Hat eine Airline eine Lizenz für Verbindung gekauft, werden neue Strecken für sie freigeschaltet
-- Die Airline steigt im Aktienkurs um die Anzahl der Punkte, die durch den Kaufpreis der Streckenlizenz angegeben wird.
-- Wird eine der 4 Bonusverbindungen mit der passenden Airline gekauft, erhält diese Airline zusätzlich Bonuspunkte im
-  Aktienkurs.
-- Als Bonus für Aktion A sucht der Spieler sich eine Aktie aus dem Aktienmarkt (inkl. Zufallsaktie) aus.
-
 B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
-- Entweder beliebig viele Aktien einer Airline oder jeweils eine Aktie von 2 Airlines 				
-- Bonus: 2 Mio pro sichtbar gemachter Aktie
-	
 C) „Air Abacus“ Aktien gegen eine eigene Aktie tauschen
-- Entweder 1 beliebige Aktie gegen 1 „Air Abacus“ Aktie							
-- Oder 3 beliebige Aktien gegen 2 „Air Abacus“ Aktien
-	
 D)  8 Mio von der Bank erhalten											
-- Ist die Bank pleite und kann nicht auszahlen(Zufälliges Ereignis), wird ein Rettungsfond eingerichtet:		
-- Jeder Spieler behält 8 Mio und gibt den Rest an die Bank							
-- Der Spieler, der das Geld von der Bank erfragt hat, erhält dieses nun aus dem Rettungsfond	
-
-### Wertung ###
-- Drei Mal im Spielverlauf findet eine Wertung statt:	                                         
-
-Aktienmarkt leeren
-- Jeder Spieler wählt eine der sichtbaren Aktien aus und nimmt sie in die eigenen Aktien auf.			           
-- Anschließend wird der Aktienmarkt mit neuen Aktien gefüllt.
-
-Airlines werten
-- Die Spieler erhalten Siegpunkte je nach Menge und Wert der besessenen Aktien. 
-
+	
 #### Spielende ####
-- Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
 
 
 
