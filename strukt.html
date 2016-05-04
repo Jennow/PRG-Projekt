@@ -21,6 +21,7 @@
 			<LoginMaske> 
 				<Spieltitel>
 				<Eingabeaufforderung> <!-- Benutzername und Passwort werden abgefragt. -->
+					<Zwei Textfelder> <!-- eines sichtbar, eines mit ***** Anzeige> -->
 				<Drei Schaltflächen> <!-- "Login", "Registrieren", "Beenden"-->
 				
 			<Startmenü> <!-- + Tabelle mit auswählbaren Schaltflächen -->
@@ -40,7 +41,7 @@
 			
 			
 			<Spiel Hintergrund>	
-				<Bild> ) <!--  Bild des Spielfeldes (Karte Europas ) -->
+				<Bild>  <!--  Bild des Spielfeldes (Karte Europas ) -->
 					<Markierugen> <!-- Heimatflughäfen, verfügbare Fluglinien, Bonusverbindungen -->
 					<Schaltflächen> <!-- für den Kauf von Streckenlizenzen -->
 			</Spiel Hintergrund>		
@@ -53,45 +54,31 @@
 				Gegner2:	   		1x blau		5x "Air Abacus"
 										...						-->
 										
-				<Kontomaske>							
-					<Tabelle 2x2> <!--  Kontoübersicht für Geld und Siegpunkte -->
-					<Aktienübersicht > <!-- Tabelle mit 22x4 auswählbaren Schaltflächen zeigt Aktien an, die im Besitz des Spielers sind und deren Aktienkurs
-					   Offene Aktien: 	blau			Anzahl		Aktienkurs
-								gelb			Anzahl		Aktienkurs
-											...			   ...
-								"Air Abacus"		Anzahl		Aktienkurs
-											
-					   Verdeckte Aktien:	blau			Anzahl
-								gelb			Anzahl
-										...
-								"Air Abacus"		Anzahl					-->
-							
-				<Buttons> 
+				<Kontomaske>	<!-- Zeigt dem Spieler seinen Besitz an-->	
+					<Tabelle 2x2> <!--  Auflistung von Geld und Siegpunkten -->
+					<Aktienübersicht > <!-- Tabelle mit 22x4 auswählbaren Schaltflächen zeigt Aktien an, die im Besitz des Spielers sind und deren Aktienkurs -->
+					<Button> <!-- Schließen der Kontomaske -->
+				</Kontomaske>	
+				
+				<Buttons> <!-- Sind konstant im Spiel sichtbar und auswählbar, um bestimmte Masken zu öffnen -->
 					<Aktienmarkt> <!-- öffnet Aktienmarkt Maske-->
-					<Streckenlizenzen><!-- öffnet Streckenlizenzen Maske-->
-					<Aktionsmenü><!-- öffnet Aktionsmenü Maske-->
+					<Streckenlizenzen> <!-- öffnet Streckenlizenzen Maske-->
+					<Aktionsmenü> <!-- öffnet Aktionsmenü Maske-->
+					<Konto> <!-- öffnet Konto Maske -->
 				
 				<Aktienmarkt Maske>
 					<Tabelle 1x6> <!-- Auswählbare Schaltflächen zeigen verfügbare Aktien-->
 					<Button> <!-- Schließen der Maske -->
 					
 				<Streckenlizenzen Maske>  		   
-					<Tabelle> <!-- mit auswählbaren Schaltflächen zeigt Anzahl an verfügbaren Streckenlizenzen für die jeweiligen Airlines-->
+					<Tabelle 2x10> <!-- mit auswählbaren Schaltflächen zeigt Anzahl an verfügbaren Streckenlizenzen für die jeweiligen Airlines-->
 					<Button> <!-- Schließen der Maske -->	
 						
 				<Aktionsmenü Maske> <!-- 4x1 Felder Tabelle mit Texteinträgen, die sich auswählen lassen und eine Aktion ausführen:
 					
-					->Schaltfläche A) "Streckenlizenz kaufen" (Öffnet Streckenlizenzen Maske und Aktienmarkt Maske)
-					
-					-> Schaltfläche B) "Aktien sichtbar machen"
-						-> <Textfeld> fragt ab, wie viele Aktien von der Airline offen gelegt werden sollen. 
-						-> <Aktienübersicht> Lässt den Spieler eine oder zwei Airlines auswählen
-					
-					
-					->Schaltfläche C) "Air Abacus (AA) Aktie ertauschen"
-						-> <Tabelle mit 2 Radio Buttons> entweder eine eigene gegen eine AA oder drei eigene gegen zwei AA Aktien tauschen
-						-> <Aktienübersicht> Lässt den Spieler eine oder drei Airlines auswählen.
-					
+					 ->Schaltfläche A) "Streckenlizenz kaufen" (Öffnet Streckenlizenzen Maske und Aktienmarkt Maske)
+					 ->Schaltfläche B) "Aktien sichtbar machen" (<Aktienübersicht> Lässt den Spieler eine oder zwei Airlines auswählen)
+					->Schaltfläche C) "Air Abacus (AA) Aktie ertauschen" (<Aktienübersicht> Lässt den Spieler eine oder drei Airlines auswählen.)
 					->Schaltfläche D) "Geld von der Bank einfordern"							-->
 					
 				<Wertungsanzeige> <!-- Tabelle Spielerazahlx2 Aufzeigen der Punkteverteilung nach der jeweiligen Wertungsrunde -->
