@@ -21,15 +21,22 @@
 			<LoginMaske> 
 				<Spieltitel>
 				<Eingabeaufforderung> <!-- Benutzername und Passwort werden abgefragt. -->
-				<Zwei Schaltflächen> <!-- "Login" und "Registrieren" -->
+				<Drei Schaltflächen> <!-- "Login", "Registrieren", "Beenden"-->
 				
 			<Startmenü> <!-- + Tabelle mit auswählbaren Schaltflächen -->
 				<Fortfahren> <!-- lässt Spieler aus mehreren Spielständen wählen -->
-				<Neues Spiel> <!-- Neuer Spielstand wir geladen-->
+				<Neues Spiel> <!-- Neuer Spielstand wird geladen-->
 					<Eingabeaufforderung> <!-- Spieler gibt die Anzahl der gewünschten Gegner ein -->
 					<Textfeld mit zwei Buttons> <!-- Benutzernamen von gewünschten Gegnern eingeben und/oder Zufallsgegner per Button auswählen. Bestätigen --> 
+					<Tabelle><!--Zeigt bisher ausgewählte Gegner an-->
+					<2 Buttons> <!-- Spiel starten oder zurück -->
 				<Einstellungen> <!-- <Lautstärke der Hintergrundmusik und Soundeffekte einstellen -->
-				
+				<Ausloggen> <!--Zurück zur Login Maske-->
+				<Credits> 
+			
+			<Bestätigungsmaske> <!-- Fragt Spieler ob er sich sicher ist-->
+				<Titel> <!-- Jeweilige Aktion wird beschrieben-->
+				<Zwei Buttons><!-- "Bestätigen" und weiter im Spielverlauf oder "zurück"-->
 			
 			
 			<Spiel Hintergrund>	
@@ -39,31 +46,42 @@
 			</Spiel Hintergrund>		
 			
 			<Spiel Vordergrund> 
-				<Tabelle 1x6> <!-- Aktienmarkt (5 sichtare, eine verdeckte Aktie) -->
-				<Tabelle 11x3> <!-- zeigt Anzahl an verfügbaren Streckenlizenzen für die jeweiligen Airlines 
-					Airline       		Lizenzen verfügbar		
-					 ...			  ...								-->		   
+			
+			
 				<Anzeige offener Aktien der Gegner> <!-- Tabelle (Gegner Anzahlx(1+Anzahl offener Aktien)) 
-					Gegner1:			2x blau		1x rot		4x "Air Abacus" 	...
-					Gegner2:	   		1x blau		5x "Air Abacus"
+				Gegner1:			2x blau		1x rot		4x "Air Abacus" 	...
+				Gegner2:	   		1x blau		5x "Air Abacus"
 										...						-->
-				<Tabelle 2x2> <!--  Kontoübersicht für Geld und Siegpunkte -->
-				<Aktienübersicht> <!-- Tabelle mit 22x4 auswählbaren Schaltflächen zeigt Aktien an, die im Besitz des Spielers sind und deren Aktienkurs
-				   Offene Aktien: 	blau			Anzahl		Aktienkurs
-							gelb			Anzahl		Aktienkurs
-									...			   ...
-							"Air Abacus"		Anzahl		Aktienkurs
 										
-				   Verdeckte Aktien:	blau			Anzahl
-							gelb			Anzahl
-									...
-							"Air Abacus"		Anzahl
-																-->
-				<Aktionsmenü> <!-- 4x1 Felder Tabelle, die erscheint wenn der Spieler an der Reihe ist, mit Texteinträgen, 
-					die sich auswählen lassen und eine Aktion ausführen:
+				<Kontomaske>							
+					<Tabelle 2x2> <!--  Kontoübersicht für Geld und Siegpunkte -->
+					<Aktienübersicht > <!-- Tabelle mit 22x4 auswählbaren Schaltflächen zeigt Aktien an, die im Besitz des Spielers sind und deren Aktienkurs
+					   Offene Aktien: 	blau			Anzahl		Aktienkurs
+								gelb			Anzahl		Aktienkurs
+											...			   ...
+								"Air Abacus"		Anzahl		Aktienkurs
+											
+					   Verdeckte Aktien:	blau			Anzahl
+								gelb			Anzahl
+										...
+								"Air Abacus"		Anzahl					-->
+							
+				<Buttons> 
+					<Aktienmarkt> <!-- öffnet Aktienmarkt Maske-->
+					<Streckenlizenzen><!-- öffnet Streckenlizenzen Maske-->
+					<Aktionsmenü><!-- öffnet Aktionsmenü Maske-->
+				
+				<Aktienmarkt Maske>
+					<Tabelle 1x6> <!-- Auswählbare Schaltflächen zeigen verfügbare Aktien-->
+					<Button> <!-- Schließen der Maske -->
 					
-					->Schaltfläche A) "Streckenlizenz kaufen"
-						 -> <Tabelle> 10 Felder: Lässt den Spieler eine Airline auswählen
+				<Streckenlizenzen Maske>  		   
+					<Tabelle> <!-- mit auswählbaren Schaltflächen zeigt Anzahl an verfügbaren Streckenlizenzen für die jeweiligen Airlines-->
+					<Button> <!-- Schließen der Maske -->	
+						
+				<Aktionsmenü Maske> <!-- 4x1 Felder Tabelle mit Texteinträgen, die sich auswählen lassen und eine Aktion ausführen:
+					
+					->Schaltfläche A) "Streckenlizenz kaufen" (Öffnet Streckenlizenzen Maske und Aktienmarkt Maske)
 					
 					-> Schaltfläche B) "Aktien sichtbar machen"
 						-> <Textfeld> fragt ab, wie viele Aktien von der Airline offen gelegt werden sollen. 
