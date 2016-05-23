@@ -13,7 +13,9 @@ Fluglizenzen mit verschiedenen Preisen. Jede Airline beginnt bei ihrem Heimatflu
 Im Vordergrund sieht der Spieler den Aktienmarkt, Übersichten über die Aktien, die sich in seinem
 Besitz befinden und über diejenigen, die die Gegner sichtbar ausgelegt haben. Außerdem wird ihm noch sein Kontostand (Geld und 
 Siegpunkte) und das Aktionsmenü angezeigt. Zur Platzersparnis (besonders auf Smartphones) erscheinen einige der Anzeigen erst nach dem
-Klick auf einen zugehörigen Button. Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden,
+Klick auf einen zugehörigen Button. Außerdem gibt es eine Anzeige, die Information darüber gibt, welcher Spieler aktuell an der Reihe 
+ist. Ist man selbst an der Reihe, wird das, wenn man sich außerhalb des Spiels befindet mittels Pop-Up Mitteilungen bzw. E-Mails
+kommuniziert. Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden,
 je nach Anzahl und Wert der Aktien, die sie besitzen. 
 
 Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das
