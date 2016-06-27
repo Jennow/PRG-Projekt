@@ -1,4 +1,61 @@
 ﻿======================================
+=== Projektidee Jennow, 2016-06-27 ===
+======================================
+
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
+
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu
+verschaffen. Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline
+besitzt.
+
+Es gibt ein Spielfeld, auf dem sich Namen für Flughäfen befinden, die anklickbar sind und dann eine Liste aller verfügbaren und
+bereits gekauften Streckelizenzen vom jeweiligen Ort anzeigen. Die Strecken "verbinden" je zwei Flughäfen miteinander 
+(was bedeutet, dass wenn z.B Ort A in der Liste vo Ort B steht, Ort B auch in der Liste von Ort A steht).
+Für jede Strecke gibt es mehrere Fluglizenzen mit verschiedenen Preisen. 
+Jede Airline beginnt bei ihrem Heimatflughafen.
+
+Zudem werden dem Spieler Aktienmarkt, Übersichten über die Aktien, die sich in seinem Besitz befinden und über diejenigen, die die
+Gegner sichtbar ausgelegt haben, sein Kontostand (Geld und Siegpunkte) und das Aktionsmenü angezeigt. Außerdem gibt es eine Anzeige,
+die Information darüber gibt, welcher Spieler aktuell an der Reihe ist. 
+
+Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden, je nach Anzahl und Wert der Aktien,
+die sie besitzen. 
+
+Vom Wert der Airline hängt auch der Preis der Aktien ab. Die Airlines verändern ihren Wert je nachdem, wie viele Streckenlizenzen von
+ihnen existieren.  Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall (oder -anstieg) einer Aktie
+auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen.
+
+Die Anzahl der Gegner kann selbst ausgewählt werden. 
+Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das Spiel nicht so lange dauert.
+Das Spiel kann mit Freunden oder mit fremden Mitspielern gespielt werden.
+Zu Beginn erhält jeder Spieler ein Startkapital und Aktien. 
+Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
+
+Es gibt ein Strategie Menü, in dem chronologisch die bishergen Aktionen aller Spieler aufgelistet sind. 
+
+
+### Spielablauf ###
+Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
+ 
+A) Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
+B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
+C) „Air Abacus“ Aktien gegen eine eigene Aktie tauschen
+D)  8 Mio von der Bank erhalten											
+	
+#### Spielende ####
+Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+
+Die Siegpunkte werden in einer großen, globalen Bestenliste gespeichert. Nach jedem Spiel wird der Durchschnitt der Siegpunkte pro 
+Spiel errechnet, anhand dessen man sich mit anderen Spielern vergleichen kann. (Anhand dieses Punktestandes werden auch automatisch
+passende Gegner gefunden, wenn man im Startmenü "fremde Mitspieler" auswählt). Außerdem werden die Punkte aller Spiele zu einem
+Gesamtpunktestand zusammenaddiert. Hat man einen bestimmten Gesamtpuktestand erreicht, kann man neue Spielmodi (z.B "auf Zeit" oder
+Team-Spiele) oder andere Extras freischalten, mit denen man sich für begrenzte Zeit einen Vorteil verschaffen kann (z.B Höhere 
+Wahrscheinlichkeit für gute Aktien oder Fähigkeit, verdeckte Aktien der Gegner zu sehen).
+
+
+
+
+﻿======================================
 === Projektidee Jennow, 2016-06-09 ===
 ======================================
 
