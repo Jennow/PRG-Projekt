@@ -10,7 +10,7 @@ besitzt.
 
 Es gibt ein Spielfeld, auf dem sich Namen für Flughäfen befinden, die anklickbar sind und dann eine Liste aller verfügbaren und
 bereits gekauften Streckelizenzen vom jeweiligen Ort anzeigen. Die Strecken "verbinden" je zwei Flughäfen miteinander 
-(was bedeutet, dass wenn z.B Ort A in der Liste vo Ort B steht, Ort B auch in der Liste von Ort A steht).
+(was bedeutet, dass wenn z.B Ort A in der Liste von Ort B steht, steht Ort B auch in der Liste von Ort A ).
 Für jede Strecke gibt es mehrere Fluglizenzen mit verschiedenen Preisen. 
 Jede Airline beginnt bei ihrem Heimatflughafen.
 
