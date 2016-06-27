@@ -19,20 +19,15 @@ Gegner sichtbar ausgelegt haben, sein Kontostand (Geld und Siegpunkte) und das A
 die Information darüber gibt, welcher Spieler aktuell an der Reihe ist. 
 
 Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden, je nach Anzahl und Wert der Aktien,
-die sie besitzen. 
-
-Vom Wert der Airline hängt auch der Preis der Aktien ab. Die Airlines verändern ihren Wert je nachdem, wie viele Streckenlizenzen von
-ihnen existieren.  Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall (oder -anstieg) einer Aktie
-auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen.
+die sie besitzen.Vom Wert der Airline hängt auch der Preis der Aktien ab. Die Airlines verändern ihren Wert je nachdem, wie viele
+Streckenlizenzen von ihnen existieren.  Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall 
+(oder -anstieg) einer Aktie auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen.
 
 Die Anzahl der Gegner kann selbst ausgewählt werden. 
 Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das Spiel nicht so lange dauert.
 Das Spiel kann mit Freunden oder mit fremden Mitspielern gespielt werden.
 Zu Beginn erhält jeder Spieler ein Startkapital und Aktien. 
 Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
-
-Es gibt ein Strategie Menü, in dem chronologisch die bishergen Aktionen aller Spieler aufgelistet sind. 
-
 
 ### Spielablauf ###
 Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
