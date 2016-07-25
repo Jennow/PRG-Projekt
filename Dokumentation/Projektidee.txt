@@ -4,24 +4,20 @@
 
 Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
 
-In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu
-verschaffen. Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline
-besitzt.
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu verschaffen. 
+Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline besitzt.
 
-Es gibt ein Spielfeld, auf dem sich Namen für Flughäfen befinden, die anklickbar sind und dann eine Liste aller verfügbaren und
-bereits gekauften Streckelizenzen vom jeweiligen Ort anzeigen. Die Strecken "verbinden" je zwei Flughäfen miteinander 
-(was bedeutet, dass wenn z.B Ort A in der Liste von Ort B steht, steht Ort B auch in der Liste von Ort A ).
+Es gibt ein Spielfeld, auf dem sich Namen für Flughäfen befinden, die anklickbar sind und dann eine Liste aller verfügbaren und bereits gekauften Streckelizenzen vom jeweiligen Ort anzeigen. 
+Die Strecken "verbinden" je zwei Flughäfen miteinander (was bedeutet, dass wenn z.B Ort A in der Liste von Ort B steht, steht Ort B auch in der Liste von Ort A ).
 Für jede Strecke gibt es mehrere Fluglizenzen mit verschiedenen Preisen. 
 Jede Airline beginnt bei ihrem Heimatflughafen.
 
-Zudem werden dem Spieler Aktienmarkt, Übersichten über die Aktien, die sich in seinem Besitz befinden und über diejenigen, die die
-Gegner sichtbar ausgelegt haben, sein Kontostand (Geld und Siegpunkte) und das Aktionsmenü angezeigt. Außerdem gibt es eine Anzeige,
-die Information darüber gibt, welcher Spieler aktuell an der Reihe ist. 
+Zudem werden dem Spieler Aktienmarkt, Übersichten über die Aktien, die sich in seinem Besitz befinden und über diejenigen, die die Gegner sichtbar ausgelegt haben, sein Kontostand (Geld und Siegpunkte) und das Aktionsmenü angezeigt. 
+Außerdem gibt es eine Anzeige, die Information darüber gibt, welcher Spieler aktuell an der Reihe ist. 
 
-Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden, je nach Anzahl und Wert der Aktien,
-die sie besitzen.Vom Wert der Airline hängt auch der Preis der Aktien ab. Die Airlines verändern ihren Wert je nachdem, wie viele
-Streckenlizenzen von ihnen existieren.  Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall 
-(oder -anstieg) einer Aktie auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen.
+Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden, je nach Anzahl und Wert der Aktien, die sie besitzen.
+Vom Wert der Airline hängt auch der Preis der Aktien ab. Die Airlines verändern ihren Wert je nachdem, wie viele Streckenlizenzen von ihnen existieren. 
+Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall (oder -anstieg) einer Aktie auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen.
 
 Die Anzahl der Gegner kann selbst ausgewählt werden. 
 Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das Spiel nicht so lange dauert.
@@ -40,15 +36,10 @@ D)  8 Mio von der Bank erhalten
 #### Spielende ####
 Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
 
-Die Siegpunkte werden in einer großen, globalen Bestenliste gespeichert. Nach jedem Spiel wird der Durchschnitt der Siegpunkte pro 
-Spiel errechnet, anhand dessen man sich mit anderen Spielern vergleichen kann. (Anhand dieses Punktestandes werden auch automatisch
-passende Gegner gefunden, wenn man im Startmenü "fremde Mitspieler" auswählt). Außerdem werden die Punkte aller Spiele zu einem
-Gesamtpunktestand zusammenaddiert. Hat man einen bestimmten Gesamtpuktestand erreicht, kann man neue Spielmodi (z.B "auf Zeit" oder
-Team-Spiele) oder andere Extras freischalten, mit denen man sich für begrenzte Zeit einen Vorteil verschaffen kann (z.B Höhere 
-Wahrscheinlichkeit für gute Aktien oder Fähigkeit, verdeckte Aktien der Gegner zu sehen).
-
-
-
+Die Siegpunkte werden in einer großen, globalen Bestenliste gespeichert. 
+Nach jedem Spiel wird der Durchschnitt der Siegpunkte pro Spiel errechnet, anhand dessen man sich mit anderen Spielern vergleichen kann. (Anhand dieses Punktestandes werden auch automatisch passende Gegner gefunden, wenn man im Startmenü "fremde Mitspieler" auswählt). 
+Außerdem werden die Punkte aller Spiele zu einem Gesamtpunktestand zusammenaddiert. 
+Hat man einen bestimmten Gesamtpuktestand erreicht, kann man neue Spielmodi (z.B "auf Zeit" oder Team-Spiele) oder andere Extras freischalten, mit denen man sich für begrenzte Zeit einen Vorteil verschaffen kann (z.B Höhere Wahrscheinlichkeit für gute Aktien oder Fähigkeit, verdeckte Aktien der Gegner zu sehen).
 
 ﻿======================================
 === Projektidee Jennow, 2016-06-09 ===
@@ -280,3 +271,41 @@ Wertung 2: Projektbeschreibung: gesamt: 3 / 10
 ===================================
 
 Leider keine Änderung seit letztem Feedback.
+
+===================================
+=== Feedback Alpers, 2016-07-25 ===
+===================================
+
+Leider müssen Sie immer noch an der Beschreibung weiterarbeiten: Im aktuellen Zustand ist Sie als Basis für die Entwicklung einer Software zu umfangreich. Das hatten Sie in früheren Phasen schon besser umgesetzt.
+
+Schauen wir uns das anhand eines Beispiels an:
+
+"Es gibt ein Spielfeld, auf dem sich Namen für Flughäfen befinden, die anklickbar sind und dann eine Liste aller verfügbaren und bereits gekauften Streckelizenzen vom jeweiligen Ort anzeigen."
+
+Hier sind gleich mehrere Probleme enthalten:
+
+(1) Zu viele Einzelfaktoren innerhalb eines Satzes. Das bewirkt, dass Sie später nicht schnell kontrollieren können, welche Jobs schon erledigt wurden. Zerlegen wir das also mal in einzelne Häppchen:
+
+* Spielfeld, besteht aus:
+- Flughäfen, die anklickbar sind,
+- und dann eine Liste aller verfügbaren
+- und bereits gekauften Streckelizenzen
+- vom jeweiligen Ort anzeigen.
+
+(2) Hier zeigt sich aber gleich, dass Sie bereits an dieser Stelle die Struktur festlegen und das ist schlecht.
+
+Also ändern wir das mal ab:
+
+Im Spiel gibt es eine mehrere Flughäfen.
+Zurzeit sind es die folgenden Flughäfen: 
+...
+Jeder Spieler bekommt einen Startflughafen zugeordnet. 
+(Oder wie wäre es mit einem Erwerb gegen Geld, einer Lotterie, ...?)
+Spieler können Routen zwischen Flughäfen erwerben.
+Für den Erwerb kann Geld verwendet werden. 
+(Wie wäre es noch mit Ansehen oder ähnlichem als alternative Währung?)
+Routen gibt es in unterschiedlichen Qualitätsstufen.
+Diese Qualitätsstufen unterscheiden sich wie folgt: 
+...
+
+Wie Sie sehen ist hier an keiner Stelle zu erkennen, wie das im Spiel optisch umgesetzt wird. Aber genau das ist bei der Beschreibung auch sehr wichtig, weil es bedeutet, dass das Spiel für die unterschiedlichsten Endgeräte angepasst werden kann.
