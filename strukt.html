@@ -10,47 +10,70 @@ Aufgabe 2: Benennung der strukturellen Elemente
 - Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
 - Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 
-- Schaltfläche (Öffnet Login Maske)
+- Hauptmenü Maske:
+	- Schaltfläche (Öffnet Einstellungen Maske)
+	- Schaltfläche (Öffnet Login Maske)
+	- Schaltfläche (Öffnet Spiel Fortfahren Maske)
+	- Schaltfläche (Öffnet Spiel Neustart Maske)
+	- Schaltfläche (Öffnet Bestenliste Maske)
+	- Schaltfläche (Öffnet Freundesliste Maske)
+	- Schaltfläche (Spieler wird abgemeldet)
+	- Schaltfläche (Spiel wird beendet)
+	
+- Einstellungen Maske:
+	- Tabelle 2x2 (2 Textanzeigen("Hintergrungmusik", "Sounds") und 2 dazugehörige Schieberegler für die Einstellung der Lautstärke)
 - Login Maske:
 	- Textfeld (für Nutzernamen)
 	- Textfeld, das die Eingabe als *** anzeigt (für Passwort)
-- Schaltfläche (Spieler wird abgemeldet)
-- Schaltfläche (Öffnet Spielstart Maske)
-- Spielstart Maske: 
+	- Schaltfläche (Leitet an eine Seite weiter, auf der man ein Benutzerprofil erstellen kann)
+- Spiel Fortfahren Maske:
+	- Tabelle 4x3 (3 Spielstände werden aufgelistet und können ausgewählt werden: Datum|Uhrzeit|Gegneranzahl|Name des Spielers, der an der Reihe ist)
+- Spiel Neustart Maske: 
 	- Tabelle aus mehreren Schaltflächen (Spieler kann einen Spielmodus auswählen)
 	- Tabelle aus 3 Schaltflächen (Spieler wählt aus, ob er gegen einen, drei oder fünf Gegner spielen will)
 	- Tabelle aus 2 Schaltflächen (Spieler wählt aus, ob er gegen Freunde (öffnet Freundesliste) oder fremde Zufallsgegner spielen will)
-- Schaltfläche (Öffnet Bestenliste Maske)
+- Warnung Maske:
+	- Textanzeige (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
 - Bestenliste Maske:
 	- Tabelle: Anzahl aller Spieler x 4: Jede Zeile ist eine Schaltfläche (Auflistung aller Spieler: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
 	- Schaltfläche (Jemanden zur Freundesliste hinzufügen)
-- Schaltfläche (Öffnet Freundesliste Maske)
 - Freundesliste Maske:
 	- Tabelle: Anzahl aller Freunde x 4 (Auflistung aller Freunde: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
 	- Schaltfläche (Jemanden von der Freundesliste entfernen)
 - Textfeld (Spieler kann einen Nutzernamen eingeben, um eine Person zu finden)
 
-
 - Spielfeld Maske:
 	- 50 verteilte Schaltflächen (Stehen für Flughäfen, Bei Anklicken werden vergebene und verfügbare Streckenlizenzen angezeigt)
-	- verbindende Schaltflächen (Stehen für Flugstrecken, die ausgewählt werden können (Zum Kaufen einer Lizenz))
+	- verbindende Schaltflächen (Stehen für Flugstrecken, bei Anklicken öffnet sich eine Streckenlizenzen Maske (Zum Kaufen einer Lizenz))
+	- 10 Bewegliche Symbole (Stehen für die Ausbreitung der 10 Airlines auf dem Spielfeld, können sich über die Verbindenden Schaltflächen von einem zum nächsten Flughafen bewegen)
 	- Schaltfläche (öffnet Aktienmarkt Maske)
-	- Schaltfläche (öffnet Aktionsmeü Maske)
+	- Schaltfläche (öffnet Aktionsmenü Maske)
 	- Tabelle 2x2 (Information über Geld und Siegpunkte im Besitz des Spielers)
-	- Tabelle 11 x Anzahl der Mitspieler (Zeigt eigene Aktien und die offenen Aktien der Gegner an)
+	- Tabelle 11 x Anzahl der Mitspieler+1 (Zeigt eigene verdeckte Aktien und die offenen Aktien aller Mitspieler an)
 	- Textanzeige (Gibt an, welcher Spieler aktuell an der Reihe ist)
 - Aktienmarkt Maske:
 	- Tabelle 11 x 2 (Auflistung der Airlines und ihrer Aktienwerte)
+	- Tabelle mit 5 Schaltflächen (Fünf zufällige Aktien werden angezeigt)
+- Aktie Maske:
+	- Tabelle mit 4 Feldern ( Name der Airline| Geldwert| Siegpunktwert| Anzahl dieser Aktien im eigenen Besitz)
+- Streckenlizenzen Maske:
+	- Tabelle mit 3 Feldern (zeigt die verfügbaren Streckenlizenzen für die jeweilige Strecke an)
 - Aktionsmenü Maske:
-	- Tabelle mit 4 Schaltflächen (Eine der vier Aktionen wird ausgewählt und ausgeführt)
+	- Schaltfläche ("Aktion A: Streckenlizenz kaufen" öffnet Aktienmarkt, Spieler wählt eine Airline und eine Strecke vom Spielfeld)
+	- Schaltfläche ("Aktion B: Aktien sichtbar machen" Spieler wählt eigene verdeckte Aktien aus und erhält dafür Geld)
+	- Schaltfläche ("Aktion C: Air Abacus (AA) Aktie ertauschen" Spieler gibt eigene Aktien weg und erhält dafür AA Aktien)
+	- Schaltfläche ("Aktion D: Geld von der Bank einfordern" Spieler erhält Geld)
+- Wertveränderung Maske:
+	- Textanzeige (Informiert darüber, dass sich der Wert einiger Aktien verändert hat)
+	- Tabelle 3x Anzahl veränderter Aktien (Name der Airline| alter Aktienwert| neuer Aktienwert)
 - Wertungsmaske:
-	- Tabelle Spielerazahlx2 (Aufzeigen der Punkteverteilung nach der jeweiligen Wertungsrunde)
+	- Tabelle Mitspieleranzahl x 2 (Aufzeigen der Punkteverteilung nach der jeweiligen Wertungsrunde)
 - Schlussanzeige Maske:
 	- Titel (Informiert Spieler, ob er gewonnen hat)
 	- Tabelle Anzahl der Mitspieler x 3 (listet die Spieler, ihre Siegpunkte und die Anzahl ihrer AA Aktien auf)
-	- 2 Schaltflächen ("Ende" und "Neues Spiel")
-
-
+	- Schaltfläche ("Ende" beendet das Spiel)
+	- Schaltfläche ("Hauptmenü" öffnet Hauptmenü Maske)
+	- Schaltfläche ("Neues Spiel" öffnet Spiel Neustart Maske und startet ein neues Spiel)
 --> 
 
 ======================================
