@@ -18,12 +18,12 @@ Die Spieler können selbst entscheiden, wie viele und welche Airlines sie unters
 
 ### Spielablauf ###
 Es gibt:
-- 10 Airlines denen je ein Heimatflughafen zugeordnet ist:
+- 10 Airlines denen je ein Heimatflughafen, ein Aktienwert in Geld und einer in Siegpunnkten zugeordnet ist:
 	Air Amigos (Frankfurt);	Rio Grande Southern Europe (Rom); Lucky Hans Airways (Wien);
 	Days Of Flying Wonders (Paris);	Brooms Bewitched (Berlin); Jolly Roger Airships (Ankara)
 	FF Flys (Stockholm); It’s Funagain To Fly (Athen); Flying Is Simply Fun (London); White Winds (Moskau)
 - Airline Air Abacus, die keinen Heimatflughafen besitzt
-- Weitere 40 Flughäfen ohne Airline
+- Weitere Flughäfen ohne Airline
 - Strecken "verbinden" je zwei Flughäfen miteinander 
 - Für jede Strecke gibt es drei Streckenlizenzen mit verschiedenen Preisen. Der Preis ist aber der einzige Unterschied. (Angebot-Nachfrage)
 - Liste aller verfügbaren und bereits gekauften Streckenlizenzen vom jeweiligen Flughafen
