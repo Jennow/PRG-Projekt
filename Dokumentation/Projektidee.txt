@@ -42,7 +42,7 @@ Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
 
 Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
  
-A) Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
+A) Eine oder zwei Streckenlizenzen für eine Airline der Wahl kaufen und eine zufällige Aktie erhalten
 B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
 C) Eine „Air Abacus“ Aktie gegen eigene Aktien tauschen
 D)  8 Mio von der Bank erhalten	
