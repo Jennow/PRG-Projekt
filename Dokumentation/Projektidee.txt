@@ -1,6 +1,4 @@
-======================================
-=== Projektidee Jennow, 2016-07-26 ===
-======================================
+
 
 Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
 
@@ -10,8 +8,8 @@ Die Spieler können selbst entscheiden, wie viele und welche Airlines sie unters
 
 
 ### Spielbeginn (Hauptmenü) ###
-- Login Bereich
-- Spielstart: Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg. Das Spiel dauert dann nicht so lange. Es kann mit Freunden oder mit fremden Mitspielern gespielt werden.
+- Login/ Logout Bereich
+- Spielstart: Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten weg. Das Spiel dauert dann nicht so lange. Es kann mit Freunden oder mit fremden Mitspielern gespielt werden.
 - Bestenliste
 - "Shop" um Siegpunkte einzulösen
 - Suchfunktion um Freunde zu finden
@@ -25,7 +23,7 @@ Es gibt:
 	Days Of Flying Wonders (Paris);	Brooms Bewitched (Berlin); Jolly Roger Airships (Ankara)
 	FF Flys (Stockholm); It’s Funagain To Fly (Athen); Flying Is Simply Fun (London); White Winds (Moskau)
 - Airline Air Abacus, die keinen Heimatflughafen besitzt
-- Weitere Flughäfen ohne Airline
+- Weitere 40 Flughäfen ohne Airline
 - Strecken "verbinden" je zwei Flughäfen miteinander 
 - Für jede Strecke gibt es drei Streckenlizenzen mit verschiedenen Preisen. Der Preis ist aber der einzige Unterschied. (Angebot-Nachfrage)
 - Liste aller verfügbaren und bereits gekauften Streckenlizenzen vom jeweiligen Flughafen
