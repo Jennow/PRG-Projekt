@@ -3,7 +3,10 @@
 ======================================
 
 <!-- 
-Aufgabe 2: Benennung der strukturellen Elemente
+
+===================================
+== (1) Strukturierung von Ansichten
+===================================
 
 -01- Hintergrundmusik
 -02- Soundeffekte (beim Auswählen einer Schaltfläche und anderen spielinternen Aktionen)
@@ -69,7 +72,7 @@ Aufgabe 2: Benennung der strukturellen Elemente
 -51- Tabelle 11 x 2 (Auflistung der Airlines und ihrer Aktienwerte)
 -52- Tabelle mit 5 Schaltflächen (Fünf zufällige Aktien werden angezeigt)
 
--53- Tabelle mit 4 Feldern ( Name der Airline| Geldwert| Siegpunktwert| Anzahl dieser Aktien im eigenen Besitz)
+-53- Liste mit 4 Feldern ( Name der Airline| Geldwert| Siegpunktwert| Anzahl dieser Aktien im eigenen Besitz)
 
 -54- Textfeld ("Streckenlizenzen")
 -55- Tabelle mit 3 Feldern (zeigt die verfügbaren Streckenlizenzen für die jeweilige Strecke an)
@@ -88,9 +91,152 @@ Aufgabe 2: Benennung der strukturellen Elemente
 
 -65- Textfeld (Informiert Spieler, ob er gewonnen hat)
 -66- Tabelle Anzahl der Mitspieler x 3 (listet die Spieler, ihre Siegpunkte und die Anzahl ihrer AA Aktien auf)
--67- Schaltfläche ("Ende" beendet das Spiel)
--68- Schaltfläche ("Hauptmenü" öffnet Hauptmenü Maske)
--69- Schaltfläche ("Neues Spiel" öffnet Spiel Neustart Maske und startet ein neues Spiel)
+-67- Schaltfläche ("Hauptmenü" öffnet Hauptmenü Maske)
+
+
+-68- Bild (Logo des Spiels)
+-69- Schaltfläche (Zeigt -70- an)
+-70- Textfeld (Informiert über die Spielregeln)
+-71- Textfeld ("Aktienmarkt")
+
+
+=======================
+== (1.1) Gruppen bilden
+=======================
+
+
+[I] Hauptmenü
+-05- Textfeld ("Hauptmenü")
+-06- Schaltfläche (Einstellungen)
+-07- Schaltfläche (Login)
+-08- Schaltfläche (Spiel Fortfahren)
+-09- Schaltfläche (Neues Spiel)
+-10- Schaltfläche (Öffnet Bestenliste)
+-11- Schaltfläche (Öffnet Freundesliste)
+-12- Schaltfläche (Öffnet Shop)
+-13- Schaltfläche (Spieler wird abgemeldet)
+-14- Schaltfläche (Spiel wird beendet)
+
+[II] Einstellungen
+-15- Textfeld ("Einstellungen")
+-16- Textfeld ("Musik")
+-17- Schieberegler (Für Musik Lautstärke)
+-18- Textfeld ("Sounds")
+-19- Schieberegler (Für Sounds Lautstärke)
+-03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[III] Login-Maske
+-20- Textfeld ("Login")
+-21- Textfeld (Fordert Spieler dazu auf, seinen Nutzernamen einzugeben)
+-22- Eingabefeld (für Nutzernamen)
+-23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
+-24- Schaltfläche (Leitet an eine Seite weiter, auf der man ein Benutzerprofil erstellen kann)
+-03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[IV] Spiel_Fortsetzen-Maske
+-25- Textfeld ("Spiel fortsetzen")
+-26- Tabelle 4x3 (3 Spielstände werden aufgelistet und können ausgewählt werden: Datum|Uhrzeit|Gegneranzahl|Name des Spielers, der an der Reihe ist)
+-31- Textfeld (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
+-03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[V] Neues_Spiel-Maske
+-27- Textfeld ("Neues Spiel")
+-28- Tabelle aus mehreren Schaltflächen (Spieler kann einen Spielmodus auswählen)
+-29- Tabelle aus 3 Schaltflächen (Spieler wählt aus, ob er gegen einen, drei oder fünf Gegner spielen will)
+-30- Tabelle aus 2 Schaltflächen (Spieler wählt aus, ob er gegen Freunde (öffnet Freundesliste) oder fremde Zufallsgegner spielen will)
+-31- Textfeld (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
+-03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[VI] Bestenliste 
+-32- Textfeld ("Bestenliste")
+-33- Tabelle: Anzahl aller Spieler x 4: Jede Zeile ist eine Schaltfläche (Auflistung aller Spieler: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
+-34- Schaltfläche (Jemanden zur Freundesliste hinzufügen)
+-35- Eingabefeld (Zum Suchen nach einem bestimmten Platz/ Benutzernamen)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[VII] Freundesliste
+-36- Textfeld ("Freundesliste")
+-37- Tabelle: Anzahl aller Freunde x 4 (Auflistung aller Freunde: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
+-38- Schaltfläche (Jemanden von der Freundesliste entfernen)
+-39- Textfeld (Spieler kann einen Nutzernamen eingeben, um eine Person zu finden)
+-03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[VIII] Shop
+-40- Textfeld ("Shop")
+-41- Tabelle (Auflistung der Extras, die man freischalten oder für Geld kaufen kann)
+-03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[IX] Spielfeld
+-42- Bild (Spielfeld: Karte Europas)
+-43- 50 verteilte Schaltflächen (Stehen für Flughäfen, Bei Anklicken werden vergebene und verfügbare Streckenlizenzen angezeigt)
+-44- verbindende Schaltflächen (Stehen für Flugstrecken, bei Anklicken öffnet sich eine Streckenlizenzen Maske (Zum Kaufen einer Lizenz))
+-45- 10 Bewegliche Symbole (Stehen für die Ausbreitung der 10 Airlines auf dem Spielfeld, können sich über die Verbindenden Schaltflächen von einem zum nächsten Flughafen bewegen)
+-46- Schaltfläche (öffnet Aktienmarkt Maske)
+-47- Schaltfläche (öffnet Aktionsmenü Maske)
+-48- Tabelle 2x2 (Information über Geld und Siegpunkte im Besitz des Spielers)
+-49- Tabelle 11 x Anzahl der Mitspieler+1 (Zeigt eigene verdeckte Aktien und die offenen Aktien aller Mitspieler an)
+-50- Textanzeige (Gibt an, welcher Spieler aktuell an der Reihe ist)
+-69- Schaltfläche (öffnet Regelwerk Maske)
+
+[X] Aktienmarkt-Maske
+-71- Textfeld ("Aktienmarkt")
+-51- Tabelle 11 x 2 (Auflistung aller Airlines und ihrer Aktienwerte)
+-52- Tabelle mit 5 Schaltflächen (Fünf zufällige Aktien werden angezeigt)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[XI] Aktie_Einzelansicht
+-53- Liste mit 4 Feldern ( Name der Airline| Geldwert| Siegpunktwert| Anzahl dieser Aktien im eigenen Besitz)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[XII] Streckenlizenzen-Maske
+-54- Textfeld ("Streckenlizenzen")
+-55- Tabelle mit 3 Feldern (zeigt die verfügbaren Streckenlizenzen für die jeweilige Strecke an)
+
+[XIII] Aktionsmenü
+-56- Textfeld ("Aktionsmenü")
+-57- Schaltfläche ("Aktion A: Streckenlizenz kaufen" öffnet Aktienmarkt, Spieler wählt eine Airline und eine Strecke vom Spielfeld)
+-58- Schaltfläche ("Aktion B: Aktien sichtbar machen" Spieler wählt eigene verdeckte Aktien aus und erhält dafür Geld)
+-59- Schaltfläche ("Aktion C: Air Abacus (AA) Aktie ertauschen" Spieler gibt eigene Aktien weg und erhält dafür AA Aktien)
+-60- Schaltfläche ("Aktion D: Geld von der Bank einfordern" Spieler erhält Geld)
+-03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[XIV] Ereignis-Maske
+-61- Textanzeige (Informiert darüber, dass sich der Wert einiger Aktien verändert hat)
+-62- Tabelle 3x Anzahl veränderter Aktien (Name der Airline| alter Aktienwert| neuer Aktienwert)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[XV] Wertungs-Maske
+-63- Textfelld ("Wertungsrunde 1/2/3")
+-64- Tabelle Mitspieleranzahl x 2 (Aufzeigen der Punkteverteilung nach der jeweiligen Wertungsrunde)
+-04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
+
+[XVI] Spielende-Maske
+-65- Textfeld (Informiert Spieler, ob er gewonnen hat)
+-66- Tabelle Anzahl der Mitspieler x 3 (listet die Spieler, ihre Siegpunkte und die Anzahl ihrer AA Aktien auf)
+-14- Schaltfläche (Spiel wird beendet)
+-67- Schaltfläche (öffnet Hauptmenü Maske)
+-09- Schaltfläche (öffnet Neues Spiel Maske)
+
+[XVII] Regelwerk-Maske
+-70- Textfeld (Informiert über die Spielregeln)
+
+
+
+
+
+
+
+
+
+
+
 --> 
 
 ======================================
