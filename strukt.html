@@ -40,10 +40,10 @@ Jenifer Prochnow
 -19- Schieberegler (Für Sounds Lautstärke)
 
 -20- Textfeld (Inhalt: "Login")
--21- Textfeld (Fordert Spieler dazu auf, seinen Nutzernamen einzugeben)
+-21- Textfeld (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
 -22- Eingabefeld (für Nutzernamen)
 -23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
--24- Schaltfläche (Leitet an eine Seite weiter, auf der man ein Benutzerprofil erstellen kann)
+-24- Schaltfläche (Öffnet Registrierungsseite)
 
 -25- Textfeld (Inhalt: "Spiel fortsetzen")
 -26- Tabelle 4x3 (3 Spielstände werden aufgelistet und können ausgewählt werden: Datum|Uhrzeit|Gegneranzahl|Name des Spielers, der an der Reihe ist)
@@ -107,6 +107,11 @@ Jenifer Prochnow
 -70- Textfeld (Informiert über die Spielregeln)
 -71- Textfeld (Inhalt: "Aktienmarkt")
 
+-72- Eingabefeld (Email-Adresse)
+-73- Bild (Captcha anzeigen)
+-74- Textfeld (Captcha eingeben)
+-75- Textfeld (Inhalt: "Registrierung")
+-76- Bild (Logo der Airline)
 
 =======================
 == (1.1) Gruppen bilden
@@ -202,6 +207,7 @@ Jenifer Prochnow
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 
 [XI] Aktie_Einzelansicht
+-76- Bild (Logo der Airline)
 -53- Liste mit 4 Feldern ( Name der Airline| Geldwert| Siegpunktwert| Anzahl dieser Aktien im eigenen Besitz)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 
@@ -238,6 +244,17 @@ Jenifer Prochnow
 [XVII] Regelwerk-Maske
 -70- Textfeld (Informiert über die Spielregeln)
 
+[XVIII] Registrierung
+-75- Textfeld (Inhalt: "Registrierung")
+-21- Textfeld (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
+-22- Eingabefeld (für Nutzernamen)
+-23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
+-23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
+-62- Eingabefeld (Email-Adresse)
+-65- Bild (Captcha anzeigen)
+-66- Eingabefeld (Captcha eingeben)
+-67- Schaltfläche (Regsitrierung abschicken)
+
 
 =========================
 == (1.2) Ansichten bilden
@@ -247,13 +264,25 @@ Jenifer Prochnow
 --- view_MainMenu ---
 ---------------------
 [I] Hauptmenü
+
+---------------------
+--- view_Settings ---
+---------------------
 [II] Einstellungen
+
+------------------
+--- view_Login ---
+------------------
 [III] Login-Maske
+
+---------------------
+--- view_Continue ---
+---------------------
 [IV] Spiel_Fortsetzen-Maske
 
------------------------
+----------------------
 --- view_Scorelist ---
------------------------
+----------------------
 [VI] Bestenliste 
 
 -----------------------
@@ -270,19 +299,47 @@ Jenifer Prochnow
 --- view_Game ---
 -----------------
 [IX] Spielfeld
-[X] Aktienmarkt-Maske
-[XI] Aktie_Einzelansicht
-[XII] Streckenlizenzen-Maske
+
+---------------------------
+--- view_pull-down_menu ---
+---------------------------
 [XIII] Aktionsmenü
+
+------------------
+--- view_Event ---
+------------------
 [XIV] Ereignis-Maske
+
+----------------------
+--- view_Scorecard ---
+----------------------
 [XV] Wertungs-Maske
+
+---------------------
+--- view_Finished ---
+---------------------
 [XVI] Spielende-Maske
 
+---------------------
+--- view_Licenses ---
+---------------------
+[XII] Streckenlizenzen-Maske
+
+-------------------------
+--- view_Stock_Market ---
+-------------------------
+[X] Aktienmarkt-Maske
+[XI] Aktie_Einzelansicht
 
 -------------------------
 --- view_Instructions ---
 -------------------------
 [XVII] Regelwerk-Maske
+
+-------------------------
+--- view_Registration ---
+-------------------------
+[XVIII] Registrierung
 
 
 --> 
