@@ -1,4 +1,6 @@
-
+﻿======================================
+=== Projektidee Jennow, August 2016 ===
+======================================
 
 Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
 
