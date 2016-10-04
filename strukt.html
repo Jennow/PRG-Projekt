@@ -532,3 +532,140 @@ Bist ja schon richtig weit. Vieles, was man ergänzen könnte, fällt mir hier z
 ===================================
 
 Bitte überarbeiten Sie zuerst Ihre Beschreibung und passen Sie dann die strukturellen Elemente entsprechend der Vorgaben im Lernraum an. Es geht nicht darum, dass Sie zeigen, dass Sie HTML programmieren können, sondern darum dass Sie im Stande sind, systematisch an einem Projekt zu arbeiten und dazu gehört insbesondere die Analyse, welche Teile eines Projekts mehrfach vorkommen sowie die Eleminierung der Duplikate.
+
+===================================
+=== Feedback Alpers, 2016-10-04 ===
+===================================
+
+== 1.) ==
+Bezüglich Ihres Hinweises vom Anfang dieses Dokuments ("... Sie haben mir in meiner persönlichen Bewertung verboten, weiter zu arbeiten, aber in der letzten Rundmail vor Ihrem Urlaub gesagt, dass wir 5 Stunden pro Woche weiterarbeiten sollen. ..."):
+
+Anfang oder Mitte Mai hatte ich allen Teilnehmern am Projekt per Rundmail geschrieben, dass jeder ab sofort an allen Teilen des Projekts arbeiten kann, auch wenn in einem früheren individuellen Feedback etwas anderes stand.
+
+=================================
+=== 2.) Strukturelle Elemente ===
+=================================
+
+== 2.1.) -02- Soundeffekte (beim Auswählen einer Schaltfläche und anderen spielinternen Aktionen) ==
+Das ist kein strukturelles Element. Wir können zwar eine Audiodatei als strukturelles Element einbinden, die gestartet, pausiert und abgebrochen werden soll, aber wenn es um Soundeffekte beim Anwählen einer Schaltfläche geht, dann wäre das eine Funktion, die an eine Schaltfläche "angebunden" wird. Das strukturelle Element wäre in dem Fall die Schaltfläche.
+
+Im Grunde sind Sie hier wieder beim Design, denn ein Audioeffekt, der das Anwählen einer Schaltfläche untermalt hat nichts mit der Funktionalität, sondern mit Usability zu tun. Das wäre Mediendesign.
+
+== 2.2.) Ungenaue Angaben ==
+-06- Schaltfläche (Einstellungen)
+-07- Schaltfläche (Login)
+-08- Schaltfläche (Spiel Fortfahren)
+-09- Schaltfläche (Neues Spiel)
+-10- Schaltfläche (Öffnet Bestenliste)
+-11- Schaltfläche (Öffnet Freundesliste)
+-12- Schaltfläche (Öffnet Shop)
+-13- Schaltfläche (Spieler wird abgemeldet)
+-14- Schaltfläche (Spiel wird beendet)
+
+Hier haben Sie die einzelnen Elemente wahrscheinlich nicht klar genug differenziert:
+
+Wenn -06- Schaltfläche (Einstellungen) dafür da sein soll, um die Einstellungen des Spiels anzuzeigen, dann gibt es dafür verschiedene Möglichkeiten:
+
+a) Es soll eine Ansicht geöffnet werden, in der die Einstellungen angezeigt werden. Dann ist das keine Schaltfläche, sondern ein Link.
+b) Es soll in der aktuellen Ansicht ein Bereich eingeblendet werden, in dem Einstellungen angezeigt werden. Dann ist das eine Zusammenfassung im Sinne der HTML-Container <summary> und <details>.
+c) Es soll ein Menü sein, von dem aus Nutzer verschiedene Bereiche der Einstellungen aufrufen können. (Dazu gäbe es dann Optionen im Menü, die beispielsweise Links sein könnten.)
+
+Wenn Sie mit -07- Schaltfläche (Login) den Button meinen, der am Ende jeder Log-In-Maske angezeigt wird und über den die eingegebenen Daten an den Server übertragen werden, dann ist das ein input type=submit.
+Wenn Sie meinen, dass auf eine Ansicht mit Log-In gewechselt werden soll, dann ist das ein Link.
+
+Prüfen Sie bitte für die genannten Schaltflächen, ob es sich tatsächlich um Schaltflächen oder doch um andere struktruelle Elemente handelt.
+
+== 2.3.) "Textfelder" ==
+Es gibt keine Textfelder als strukturelle Elemente. Es gibt dagegen Überschriften, Absätze und viele andere, die dafür genutzt werden können, um Texte zu strukturieren. Leider ist das manchmal auch im Skript nicht klar genug formuliert und in Gesprächen benutze ich gelegentlich diesen Ausdruck. Daneben gibt es noch verschiedene input-types, die für Eingaben von der Tastatur genutzt werden können.
+
+== 2.4.) Hinweis auf Labels ==
+-21- Textfeld (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
+-22- Eingabefeld (für Nutzernamen)
+
+Wenn Sie innerhalb eines Formulars ein Eingabefeld haben, dann benötigen Sie ein Label, kein "Textfeld", um Nutzern anzuzeigen, welche Eingaben erwartet werden.
+
+== 2.5.) Hinweis zu "Speicherständen" ==
+-26- Tabelle 4x3 (3 Spielstände werden aufgelistet und können ausgewählt werden: Datum|Uhrzeit|Gegneranzahl|Name des Spielers, der an der Reihe ist)
+
+Nur zur Sicherheit folgender Hinweis: Speicherungen von Partien finden gewissermaßen automatisch auf dem Server statt. Wenn eine Partie mit mehereren Spielern stattfindet, dann müssen die für eine Fortsetzung alle online und eingeloggt sein, denn es soll keinesfalls so sein, dass für eine Mehrspielerpartie mehrere Spieler an einem Rechner sitzen.
+
+== 2.6.) Ziel dieses Aufgabenteils: Vermeidung von Redundanzen ==
+-32- Textfeld (Inhalt: "Bestenliste")
+-33- Tabelle: Anzahl aller Spieler x 4: Jede Zeile ist eine Schaltfläche (Auflistung aller Spieler: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
+-34- Schaltfläche (Jemanden zur Freundesliste hinzufügen)
+-35- Suchfeld (Zum Suchen nach einem bestimmten Platz/ Benutzernamen)
+
+-36- Textfeld (Inhalt: "Freundesliste")
+-37- Tabelle: Anzahl aller Freunde x 4 (Auflistung aller Freunde: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
+-38- Schaltfläche (Jemanden von der Freundesliste entfernen)
+-39- Suchfeld (Spieler kann einen Nutzernamen eingeben, um eine Person zu finden)
+
+Wenn Sie diese acht strukturellen Elemente vergleichen, werden Sie feststellen, dass die in struktureller Hinsicht identisch sind. Und damit sind wir beim Zweck dieses Aufgabenteils: Alles, was mehrfach an verschiedenen Stellen vorkommt soll wenn möglich nur einmal programmiert werden. Und um das sicher zu stellen sollten Sie oben alles löschen, wo das der Fall ist.
+
+== 2.7.) ==
+-24- Text mit Hyperlink (Leitet an eine Seite weiter, auf der man ein Benutzerprofil erstellen kann)
+
+Das ist ein Link zur Registrierung. (Wenn nicht anders notiert haben Links/Hyperlinks stets eine Beschriftung. Sie können zwar auch mit einem Bild oder anderen strukturellen Elementen kombiniert werden, aber nur in den Fällen müssten Sie entsprechende Hinweise notieren.)
+
+Wertung 3: Ausarbeitung der strukt. Elem.: gesamt: 5 / 10
+- Knappe Form (0 - 3 Pk.): 3
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk.: 2
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. 0 bis 5 Pk. Abzug: 
+
+==================
+== 3.) Gruppen ===
+==================
+
+== 3.1.) [I] Hauptmenü ==
+-78- Bild (Hintergrundbild)
+
+a) Vermeiden Sie bei Dateinamen Umlaute oder andere Sonderzeichen, die nicht Teil des ASCII-Standards sind. Sonst könnte es bei der Datenübertragung übers Internet zu Problemen kommen.
+b) Wenn dieses Bild im Hintergrund der gesamten Seite angezeigt werden soll, dann ist das einer der wenigen Fälle, wo ein strukturelles Element Teil einer Ansicht und nicht einer Gruppe ist.
+
+== 3.2.) [IX] Spielfeld ==
+-43- 50 verteilte Schaltflächen (Stehen für Flughäfen, Bei Anklicken werden vergebene und verfügbare Streckenlizenzen angezeigt) 
+
+Momentan würde das bedeuten, dass in einer anderen Gruppe die Streckenlizenzen angezeigt werden sollen. Das ist deshalb schlecht, weil Sie so unnötige Abhängigkeiten zwischen verschiedenen Gruppen schaffen. Eine Idee hinter diesen Gruppen (im neuen Projekt passender als Microservices bezeichnet) besteht darin, dass sie so wenig wie möglich von anderen Gruppen abhängen.
+
+== 2.4.) [XIX] Navigationsleiste ==
+Es gibt einen Container, der perfekt dafür geeignet ist: <nav>
+Leider taucht der in Ihrer Gruppe nicht auf.
+
+Wertung 4: Gruppierungen: 5 / 5
+- für jede sinnvolle Gruppe: 1
+
+===================
+== 4.) Ansichten ==
+===================
+
+Leider haben Sie diesen Teil nicht sinnvoll umgesetzt: Die Vorarbeit mit den Gruppen diente dazu, dass Sie nun eine Vielzahl an Modulen haben, die sie jeweils in meherere Ansichten einbinden sollten. Stattdessen haben Sie die Gruppen direkt zu Ansichten definiert und das ist schlecht. Überlegen Sie sich, welche der Gruppen in mehreren Ansichten Sinn machen würden. Prüfen Sie ggf. ob vielleicht auch mehrere Gruppen zu einer zusammengefasst werden können. Es kann auch sein, dass es Sinn macht, eine Ansicht zu definieren, in der zwar mehrere Gruppen eingebunden sind, von denen aber gleichzeitig nur eine angezeigt wird.
+
+======================================
+== 5.) Gruppen in HTML programmiert ==
+======================================
+
+== 5.1.) [I] Hauptmenü ==
+Es gibt keine entsprechend benannte Datei im Gruppenverzeichnis.
+
+== 5.2.) [II] Einstellungen ==
+Es gibt keine entsprechend benannte Datei im Gruppenverzeichnis.
+
+== 5.3.) [III] Login-Maske ==
+Siehe Kommentare in Login.html.
+
+== 5.4.) [IV] Spiel_Fortsetzen-Maske ==
+Es gibt keine entsprechend benannte Datei im Gruppenverzeichnis.
+
+== 5.5.) [V] Neues_Spiel-Maske ==
+Es gibt keine entsprechend benannte Datei im Gruppenverzeichnis.
+
+== 5.6.) [VI] Bestenliste ==
+Es gibt keine entsprechend benannte Datei im Gruppenverzeichnis.
+
+== 5.7.) [VII] Freundesliste == 
+Es gibt keine entsprechend benannte Datei im Gruppenverzeichnis.
+
+== 5.8.) [VIII] Shop ==
+Siehe Kommentar in Shop.html.
+
+Bitte passen Sie die Namen der HTML-Dateien an die Bezeichnung der Gruppen in der strukt.html an und setzen Sie die in den beiden Dateien ausgeführten Feedbacks in allen Dateien um.

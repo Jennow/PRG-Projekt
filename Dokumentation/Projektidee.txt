@@ -372,3 +372,20 @@ Diese Qualitätsstufen unterscheiden sich wie folgt:
 ...
 
 Wie Sie sehen ist hier an keiner Stelle zu erkennen, wie das im Spiel optisch umgesetzt wird. Aber genau das ist bei der Beschreibung auch sehr wichtig, weil es bedeutet, dass das Spiel für die unterschiedlichsten Endgeräte angepasst werden kann.
+
+===================================
+=== Feedback Alpers, 2016-10-04 ===
+===================================
+
+Die Beschreibung ist jetzt in einem sehr guten Zustand, um sie als Grundlage für die weitere Entwicklung zu nehmen.
+
+Auf die Umsetzung als verteilte Anwendung gehen Sie zwar nicht weiter ein, aber die ergibt sich implizit durch Log-In und Nutzerverwaltung.
+
+Was noch fehlt ist der Computer als Gegenspieler und hier insbesondere die Adaption des Spielerverhaltens. (Bislang hatte ich die unter dem Begriff der Interaktion zwischen Spieler und Spiel zusammengefasst.)
+
+Wertung 2: Projektbeschreibung: gesamt: 5 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 5
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0
+- Voraussetzung bekannten Wissens: 0 
