@@ -1,4 +1,77 @@
 ﻿======================================
+=== Projektidee Jennow, 05.10.2016 ===
+======================================
+
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in eine Webanwendung nach einem Vorschlag von Herr Alpers sein.
+
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu verschaffen.
+Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline besitzt. 
+Die Spieler können selbst entscheiden, wie viele und welche Airlines sie unterstützen wollen.
+
+
+### Spielbeginn (Hauptmenü) ###
+- Login/ Logout Bereich (php, Weiterleitung an SQL Datebank)
+- Spielstart: Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten weg. Das Spiel dauert dann nicht so lange. Es kann mit Freunden, fremden Mitspielern oder allein gegen den Computer gespielt werden. 
+- Bestenliste (Datenbank SQL)
+- "Shop" um Siegpunkte einzulösen
+- Suchfunktion um Freunde zu finden
+- Freundesliste, aus der man seinen Wunschgegner wählen kann
+
+### Spielablauf ###
+Es gibt:
+- 10 Airlines denen je ein Heimatflughafen, ein Aktienwert in Geld und einer in Siegpunnkten zugeordnet ist:
+	Air Amigos (Frankfurt);	Rio Grande Southern Europe (Rom); Lucky Hans Airways (Wien);
+	Days Of Flying Wonders (Paris);	Brooms Bewitched (Berlin); Jolly Roger Airships (Ankara)
+	FF Flys (Stockholm); It’s Funagain To Fly (Athen); Flying Is Simply Fun (London); White Winds (Moskau)
+- Airline Air Abacus, die keinen Heimatflughafen besitzt
+- Weitere Flughäfen ohne Airline
+- Strecken "verbinden" je zwei Flughäfen miteinander 
+- Für jede Strecke gibt es drei Streckenlizenzen mit verschiedenen Preisen. Der Preis ist aber der einzige Unterschied. (Angebot-Nachfrage)
+- Liste aller verfügbaren und bereits gekauften Streckenlizenzen vom jeweiligen Flughafen
+- Aktienmarkt, in dem zufällige Aktien zum Kauf bereit stehen
+- Aktionsmenü
+
+Für jeden Spieler seperat:
+- Übersichten über Aktien, die sich in seinem Besitz befinden
+- und über diejenigen, die die Gegner sichtbar ausgelegt haben
+- Kontostand (Geld und Siegpunkte) 
+- Anzeige welcher Spieler aktuell an der Reihe ist. 
+
+
+Zu Beginn erhält jeder Spieler ein Startkapital und Aktien.
+Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
+
+Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
+ 
+A) Eine oder zwei Streckenlizenzen für eine Airline der Wahl kaufen und eine zufällige Aktie erhalten
+B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
+C) Eine „Air Abacus“ Aktie gegen eigene Aktien tauschen
+D)  8 Mio von der Bank erhalten	
+
+Im Spielverlauf gibt es drei Wertungsrunden.
+Je nach Anzahl und Wert der Aktien, die sie besitzen, werden Siegpunkte an die Spieler verteilt.
+Vom Wert einer Airline hängt auch der Preis der Aktien ebendieser ab. Die Airlines verändern ihren Wert je nach Anzahl ihrer Streckenlizenzen. 
+Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall (oder -anstieg) einer Aktie auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen. 
+Die Ausnahme ist Air Abacus, ihr Wert bleibt immer gleich (Relativ hoch).
+
+#### Spielende ####
+Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+
+Die Siegpunkte werden in einer großen, globalen Bestenliste gespeichert. 
+Nach jedem Spiel wird der Durchschnitt der Siegpunkte pro Spiel errechnet. Anhand dessen kann man sich mit anderen Spielern vergleichen. 
+Außerdem werden die Punkte aller Spiele zu einem Gesamtpunktestand zusammenaddiert. 
+Hat man einen bestimmten Gesamtpuktestand erreicht, kann man neue Spielmodi (z.B "auf Zeit" oder Team-Spiele) oder andere Extras freischalten, mit denen man sich für begrenzte Zeit einen Vorteil verschaffen kann (z.B Höhere Wahrscheinlichkeit für gute Aktien oder Fähigkeit, verdeckte Aktien der Gegner zu sehen). 
+
+### Interaktionen zwischen Spieler und Spiel ###
+- Generell hat jeder Kauf einer Streckenlizenz einen Einfluss auf den zugehörigen Aktienwert. Somit ändert sich dann der Spielverlauf, da alle Spieler auf den Aktienkurs reagieren müssen.
+- Das Spielverhalten von Nutzern wird in ihrem Profil abgespeichert und dann von einem computergesteuerten Gegenspieler adaptiert, gegen den man im Einzelspieler-Modus antreten kann. 
+- Im Einzelspieler-Modus lassen sich verschiedene Schwierigkeitsstufen auswählen.
+- Anhand der gespeicherten Informationen über Spielverhalten und Spielerfolge (Durchschnittspunktzahl) werden auch automatisch passende Gegner gefunden, wenn man im Startmenü "fremde Mitspieler" auswählt
+
+
+
+
+======================================
 === Projektidee Jennow, August 2016 ===
 ======================================
 
