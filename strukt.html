@@ -3,90 +3,77 @@
 ======================================
 
 <!-- 
-
-An Herr Alpers: Sie haben mir in meiner persönlichen Bewertung verboten, weiter zu arbeiten, aber in der letzten Rundmail vor Ihrem Urlaub gesagt, dass wir 5 Stunden pro Woche weiterarbeiten sollen. 
-Ich kann aber leider nicht fünf Stunden pro Woche an den beiden ersten Aufgaben arbeiten und kann Sie per Mail leider nicht erreichen, daher habe ich nun schon ohne Ihr Einverständnis mit den weiteren Aufgaben angefangen.
-Notfalls mache ich mir damit selbst mehr Arbeit als ich haben müsste, aber so gehe ich auf Nummer sicher, nicht aus dem Projekt geschmissen zu werden. Sollten die ersten beiden Aufgaben immernoch nicht 
-zufriedenstellend gelöst sein, müssen Sie ja nicht weiterlesen.
-
-Mit freunlichen Grüßen
-
-Jenifer Prochnow
-
 ===================================
 == (1) Strukturierung von Ansichten
 ===================================
 
 -01- Hintergrundmusik
--02- Soundeffekte (beim Auswählen einer Schaltfläche und anderen spielinternen Aktionen)
 -03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 
--05- Textfeld (Inhalt: "Hauptmenü")
--06- Schaltfläche (Einstellungen)
--07- Schaltfläche (Login)
--08- Schaltfläche (Spiel Fortfahren)
--09- Schaltfläche (Neues Spiel)
--10- Schaltfläche (Öffnet Bestenliste)
--11- Schaltfläche (Öffnet Freundesliste)
--12- Schaltfläche (Öffnet Shop)
--13- Schaltfläche (Spieler wird abgemeldet)
+-05- Überschrift (Inhalt: "Hauptmenü")
+-06- Link (öffnet Einstellungen)
+-07- Link (öffnet Login-Bereich)
+-08- Link (öffnet Spiel Fortfahren)
+-09- Link (öffnet Neues Spiel)
+-10- Link (öffnet Bestenliste)
+-11- Link (öffnet Freundesliste)
+-12- Link (öffnet Shop)
+-13- Link (Spieler wird abgemeldet)
 -14- Schaltfläche (Spiel wird beendet)
 
--15- Textfeld (Inhalt: "Einstellungen")
--16- Textfeld (Inhalt: "Musik")
+-15- Überschrift (Inhalt: "Einstellungen")
+-16- Überschrift (Inhalt: "Musik")
 -17- Schieberegler (Für Musik Lautstärke)
--18- Textfeld (Inhalt: "Sounds")
+-18- Überschrift (Inhalt: "Sounds")
 -19- Schieberegler (Für Sounds Lautstärke)
 
--20- Textfeld (Inhalt: "Login")
--21- Textfeld (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
+-20- Überschrift (Inhalt: "Login")
 -22- Eingabefeld (für Nutzernamen)
 -23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
--24- Schaltfläche (Öffnet Registrierungsseite)
+-24- Link (Öffnet Registrierungsseite)
 
--25- Textfeld (Inhalt: "Spiel fortsetzen")
+-25- Überschrift (Inhalt: "Spiel fortsetzen")
 -26- Tabelle 4x3 (3 Spielstände werden aufgelistet und können ausgewählt werden: Datum|Uhrzeit|Gegneranzahl|Name des Spielers, der an der Reihe ist)
 
--27- Textfeld (Inhalt: "Neues Spiel")
+-27- Überschrift (Inhalt: "Neues Spiel")
 -28- Tabelle aus mehreren Schaltflächen (Spieler kann einen Spielmodus auswählen)
 -29- 3 Radio Buttons (Spieler wählt aus, ob er gegen einen, drei oder fünf Gegner spielen will)
 -30- 2 Radio Buttons (Spieler wählt aus, ob er gegen Freunde (öffnet Freundesliste) oder fremde Zufallsgegner spielen will)
 
--31- Textfeld (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
+-31- Absatz (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
 
--32- Textfeld (Inhalt: "Bestenliste")
--33- Tabelle: Anzahl aller Spieler x 4: Jede Zeile ist eine Schaltfläche (Auflistung aller Spieler: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
+-32- Überschrift (Inhalt: "Bestenliste")
+-33- Tabelle: Anzahl benötigter Spieler x 4: Jede Zeile ist eine Schaltfläche (Auflistung aller Spieler: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
 -34- Schaltfläche (Jemanden zur Freundesliste hinzufügen)
 -35- Suchfeld (Zum Suchen nach einem bestimmten Platz/ Benutzernamen)
 
--36- Textfeld (Inhalt: "Freundesliste")
--37- Tabelle: Anzahl aller Freunde x 4 (Auflistung aller Freunde: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
+-36- Überschrift (Inhalt: "Freundesliste")
 -38- Schaltfläche (Jemanden von der Freundesliste entfernen)
--39- Suchfeld (Spieler kann einen Nutzernamen eingeben, um eine Person zu finden)
 
--40- Textfeld (Inhalt: "Shop")
+
+-40- Überschrift (Inhalt: "Shop")
 -41- Tabelle (Auflistung der Extras, die man freischalten oder für Geld kaufen kann)
 
 -42- Bild (Spielfeld: Karte Europas)
 -43- 50 verteilte Schaltflächen (Stehen für Flughäfen, Bei Anklicken werden vergebene und verfügbare Streckenlizenzen angezeigt)
 -44- verbindende Schaltflächen (Stehen für Flugstrecken, bei Anklicken öffnet sich eine Streckenlizenzen Maske (Zum Kaufen einer Lizenz))
 -45- 10 Bewegliche Symbole (Stehen für die Ausbreitung der 10 Airlines auf dem Spielfeld, können sich über die Verbindenden Schaltflächen von einem zum nächsten Flughafen bewegen)
--46- Schaltfläche (öffnet Aktienmarkt Maske)
--47- Schaltfläche (öffnet Aktionsmenü Maske)
+-46- Zusammenfassung (Summary) (öffnet Aktienmarkt)
+-47- Zusammenfassung (Summary) (öffnet Aktionsmenü)
 -48- Tabelle 2x2 (Information über Geld und Siegpunkte im Besitz des Spielers)
 -49- Tabelle 11 x Anzahl der Mitspieler+1 (Zeigt eigene verdeckte Aktien und die offenen Aktien aller Mitspieler an)
--50- Textfeld (Gibt an, welcher Spieler aktuell an der Reihe ist)
+-50- Überschrift (Gibt an, welcher Spieler aktuell an der Reihe ist)
 
 -51- Tabelle 11 x 2 (Auflistung der Airlines und ihrer Aktienwerte)
 -52- Tabelle mit 5 Schaltflächen (Fünf zufällige Aktien werden angezeigt)
 
 -53- Liste mit 4 Feldern ( Name der Airline| Geldwert| Siegpunktwert| Anzahl dieser Aktien im eigenen Besitz)
 
--54- Textfeld (Inhalt: "Streckenlizenzen")
+-54- Überschrift (Inhalt: "Streckenlizenzen")
 -55- Tabelle mit 3 Feldern (zeigt die verfügbaren Streckenlizenzen für die jeweilige Strecke an)
 
--56- Textfeld (Inhalt: "Aktionsmenü")
+-56- Überschrift (Inhalt: "Aktionsmenü")
 -57- Schaltfläche ("Aktion A: Streckenlizenz kaufen" öffnet Aktienmarkt, Spieler wählt eine Airline und eine Strecke vom Spielfeld)
 -58- Schaltfläche ("Aktion B: Aktien sichtbar machen" Spieler wählt eigene verdeckte Aktien aus und erhält dafür Geld)
 -59- Schaltfläche ("Aktion C: Air Abacus (AA) Aktie ertauschen" Spieler gibt eigene Aktien weg und erhält dafür AA Aktien)
@@ -98,31 +85,31 @@ Jenifer Prochnow
 -63- Textfelld (Inhalt: "Wertungsrunde 1/2/3")
 -64- Tabelle Mitspieleranzahl x 2 (Aufzeigen der Punkteverteilung nach der jeweiligen Wertungsrunde)
 
--65- Textfeld (Informiert Spieler, ob er gewonnen hat)
+-65- Überschrift (Informiert Spieler, ob er gewonnen hat)
 -66- Tabelle Anzahl der Mitspieler x 3 (listet die Spieler, ihre Siegpunkte und die Anzahl ihrer AA Aktien auf)
--67- Schaltfläche ("Hauptmenü" öffnet Hauptmenü Maske)
+-67- Link (öffnet Hauptmenü)
 
 -68- Bild (Logo des Spiels)
--69- Schaltfläche (Öffnnet Regelwerk-Maske)
--70- Textfeld (Informiert über die Spielregeln)
--71- Textfeld (Inhalt: "Aktienmarkt")
+-69- Zusammenfassung (Summary) (Öffnnet Regelwerk-Maske)
+-70- Überschrift (Informiert über die Spielregeln)
+-71- Überschrift (Inhalt: "Aktienmarkt")
 
 -72- Eingabefeld (Email-Adresse)
 -73- Bild (Captcha anzeigen)
--74- Textfeld (Captcha eingeben)
--75- Textfeld (Inhalt: "Registrierung")
+-74- Überschrift (Captcha eingeben)
+-75- Überschrift (Inhalt: "Registrierung")
 -76- Bild (Logo der Airline)
--77- Schaltfläche (öffnet Hauptmenü)
 -78- Bild (Hintergrundbild)
--79- Textfeld (Zeigt eigenen Nutzernamen an)
+-79- Überschrift (Zeigt eigenen Nutzernamen an)
+-80- Navigationsleiste (Strukturiert Mehrere Links in einer Leiste)
 
 =======================
 == (1.1) Gruppen bilden
 =======================
 
-[I] Hauptmenü
+[I] Hauptmenu
 -68- Bild (Logo des Spiels)
--05- Textfeld (Titel: "Hauptmenü")
+-05- Überschrift (Titel: "Hauptmenü")
 -06- Schaltfläche (Einstellungen)
 -07- Schaltfläche (Login)
 -08- Schaltfläche (Spiel Fortfahren)
@@ -132,23 +119,21 @@ Jenifer Prochnow
 -12- Schaltfläche (Öffnet Shop)
 -13- Schaltfläche (Spieler wird abgemeldet)
 -14- Schaltfläche (Spiel wird beendet)
--69- Schaltfläche (Öffnet Regelwerk-Maske)
--78- Bild (Hintergrundbild)
--79- Textfeld (Zeigt eigenen Nutzernamen an)
+-69- Zusammenfassung (Summary) (Öffnet Regelwerk-Maske)
+-79- Überschrift (Zeigt eigenen Nutzernamen an)
 
 [II] Einstellungen
--15- Textfeld (Titel: "Einstellungen")
--16- Textfeld (Inhalt: "Musik")
+-15- Überschrift (Titel: "Einstellungen")
+-16- Überschrift (Inhalt: "Musik")
 -17- Schieberegler (Für Musik Lautstärke)
--18- Textfeld (Inhalt: "Sounds")
+-18- Überschrift (Inhalt: "Sounds")
 -19- Schieberegler (Für Sounds Lautstärke)
 -03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 -78- Bild (Hintergrundbild)
 
 [III] Login-Maske
--20- Textfeld (Titel: "Login")
--21- Textfeld (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
+-20- Überschrift (Titel: "Login")
 -22- Eingabefeld (für Nutzernamen)
 -23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
 -24- Text mit Hyperlink (Leitet an eine Seite weiter, auf der man ein Benutzerprofil erstellen kann)
@@ -156,26 +141,26 @@ Jenifer Prochnow
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 -78- Bild (Hintergrundbild)
 
-[IV] Spiel_Fortsetzen-Maske
--25- Textfeld (Titrl: "Spiel fortsetzen")
+[IV] Spiel_Fortsetzen
+-25- Überschrift (Titel: "Spiel fortsetzen")
 -26- Tabelle 5x4 (3 Spielstände werden aufgelistet und können ausgewählt werden: Radio-Button|Datum|Uhrzeit|Gegneranzahl|Name des Spielers, der an der Reihe ist)
--31- Textfeld (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
+-31- Überschrift (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
 -03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 -78- Bild (Hintergrundbild)
 
-[V] Neues_Spiel-Maske
--27- Textfeld (Titel: "Neues Spiel")
+[V] Neues_Spiel
+-27- Überschrift (Titel: "Neues Spiel")
 -28- Tabelle aus mehreren Schaltflächen (Spieler kann einen Spielmodus auswählen)
 -29- 3 Radio Buttons (Spieler wählt aus, ob er gegen einen, drei oder fünf Gegner spielen will)
 -30- 2 Radio Buttons (Spieler wählt aus, ob er gegen Freunde (öffnet Freundesliste) oder fremde Zufallsgegner spielen will)
--31- Textfeld (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
+-31- Überschrift (Teilt em Spieler mit, dass er nicht spielen kann, ohne sich einzuloggen)
 -03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 -78- Bild (Hintergrundbild)
 
 [VI] Bestenliste 
--32- Textfeld (Titel: "Bestenliste")
+-32- Überschrift (Titel: "Bestenliste")
 -33- Tabelle: Anzahl aller Spieler x 4: Jede Zeile ist eine Schaltfläche (Auflistung aller Spieler: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
 -34- Schaltfläche (Jemanden zur Freundesliste hinzufügen)
 -35- Eingabefeld (Zum Suchen nach einem bestimmten Platz/ Benutzernamen)
@@ -183,16 +168,16 @@ Jenifer Prochnow
 -78- Bild (Hintergrundbild)
 
 [VII] Freundesliste
--36- Textfeld (Titel: "Freundesliste")
--37- Tabelle: Anzahl aller Freunde x 4 (Auflistung aller Freunde: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
+-36- Überschrift (Titel: "Freundesliste")
+-33- Tabelle: Anzahl aller Freunde x 4 (Auflistung aller Freunde: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
 -38- Schaltfläche (Jemanden von der Freundesliste entfernen)
--39- Eingabefeld (Spieler kann einen Nutzernamen eingeben, um eine Person zu finden)
+-35- Eingabefeld (Zum Suchen nach einem bestimmten Platz/ Benutzernamen)
 -03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 -78- Bild (Hintergrundbild)
 
 [VIII] Shop
--40- Textfeld (Titel: "Shop")
+-40- Überschrift (Titel: "Shop")
 -41- Tabelle (Auflistung der Extras, die man freischalten oder für Geld kaufen kann)
 -03- Schaltfläche (Bestätigung, dass eine Eingabe abgeschickt werden soll)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
@@ -203,10 +188,10 @@ Jenifer Prochnow
 -43- 50 verteilte Schaltflächen (Stehen für Flughäfen, Bei Anklicken werden vergebene und verfügbare Streckenlizenzen angezeigt)
 -44- verbindende Schaltflächen (Stehen für Flugstrecken, bei Anklicken öffnet sich eine Streckenlizenzen Maske (Zum Kaufen einer Lizenz))
 -45- 10 Bewegliche Symbole (Stehen für die Ausbreitung der 10 Airlines auf dem Spielfeld, können sich über die Verbindenden Schaltflächen von einem zum nächsten Flughafen bewegen)
--79- Textfeld (Zeigt Nutzernamen an)
+-79- Überschrift (Zeigt Nutzernamen an)
 
 [X] Aktienmarkt-Maske
--71- Textfeld (Titel: "Aktienmarkt")
+-71- Überschrift (Titel: "Aktienmarkt")
 -51- Tabelle 11 x 2 (Auflistung aller Airlines und ihrer Aktienwerte)
 -52- Tabelle mit 5 Schaltflächen (Fünf zufällige Aktien werden angezeigt)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
@@ -218,12 +203,12 @@ Jenifer Prochnow
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 
 [XII] Streckenlizenzen-Maske
--54- Textfeld (Titel: "Streckenlizenzen")
+-54- Überschrift (Titel: "Streckenlizenzen")
 -55- Tabelle mit 3 Feldern (zeigt die verfügbaren Streckenlizenzen für die jeweilige Strecke an)
 -78- Bild (Hintergrundbild)
 
-[XIII] Aktionsmenü
--56- Textfeld (Titel: "Aktionsmenü")
+[XIII] Aktionsmenu
+-56- Überschrift (Titel: "Aktionsmenü")
 -57- Schaltfläche ("Aktion A: Streckenlizenz kaufen" öffnet Aktienmarkt, Spieler wählt eine Airline und eine Strecke vom Spielfeld)
 -58- Schaltfläche ("Aktion B: Aktien sichtbar machen" Spieler wählt eigene verdeckte Aktien aus und erhält dafür Geld)
 -59- Schaltfläche ("Aktion C: Air Abacus (AA) Aktie ertauschen" Spieler gibt eigene Aktien weg und erhält dafür AA Aktien)
@@ -245,21 +230,21 @@ Jenifer Prochnow
 -78- Bild (Hintergrundbild)
 
 [XVI] Spielende-Maske
--65- Textfeld (Informiert Spieler, ob er gewonnen hat)
+-65- Überschrift (Informiert Spieler, ob er gewonnen hat)
 -66- Tabelle Anzahl der Mitspieler x 3 (listet die Spieler, ihre Siegpunkte und die Anzahl ihrer AA Aktien auf)
 -14- Schaltfläche (Spiel wird beendet)
--67- Schaltfläche (öffnet Hauptmenü Maske)
+-67- Schaltfläche (öffnet Hauptmenü)
 -09- Schaltfläche (öffnet Neues Spiel Maske)
 -78- Bild (Hintergrundbild)
 
 [XVII] Regelwerk-Maske
--70- Textfeld (Informiert über die Spielregeln)
+-70- Überschrift (Informiert über die Spielregeln)
 -04- Schaltfläche ("Zurück" Button: Schließt eine Maske wieder)
 -78- Bild (Hintergrundbild)
 
 [XVIII] Registrierung
--75- Textfeld (Inhalt: "Registrierung")
--21- Textfeld (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
+-75- Überschrift (Inhalt: "Registrierung")
+-21- Überschrift (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
 -22- Eingabefeld (für Nutzernamen)
 -23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
 -23- Eingabefeld, das die Eingabe als *** anzeigt (für Passwort)
@@ -271,14 +256,16 @@ Jenifer Prochnow
 -78- Bild (Hintergrundbild)
 
 [XIX] Navigationsleiste
--48- Tabelle 2x2 (Information über Geld und Siegpunkte im Besitz des Spielers)
--49- Tabelle 11 x Anzahl der Mitspieler+1 (Zeigt eigene verdeckte Aktien und die offenen Aktien aller Mitspieler an)
--50- Textanzeige (Gibt an, welcher Spieler aktuell an der Reihe ist)
--69- Schaltfläche (öffnet Regelwerk-Maske)
--06- Schaltfläche (Einstellungen)
--46- Schaltfläche (öffnet Aktienmarkt Maske)
--47- Schaltfläche (öffnet Aktionsmenü Maske)
--78- Bild (Hintergrundbild)
+-80- Navigationsleiste (Strukturiert Mehrere Links in einer Leiste)
+	-48- Tabelle 2x2 (Information über Geld und Siegpunkte im Besitz des Spielers)
+	-49- Tabelle 11 x Anzahl der Mitspieler+1 (Zeigt eigene verdeckte Aktien und die offenen Aktien aller Mitspieler an)
+	-50- Textanzeige (Gibt an, welcher Spieler aktuell an der Reihe ist)
+	-69- Schaltfläche (öffnet Regelwerk-Maske)
+	-06- Schaltfläche (Einstellungen)
+	-46- Schaltfläche (öffnet Aktienmarkt Maske)
+	-47- Schaltfläche (öffnet Aktionsmenü Maske)
+	-78- Bild (Hintergrundbild)
+
 
 
 
@@ -290,41 +277,30 @@ Jenifer Prochnow
 --- view_MainMenu ---
 ---------------------
 [I] Hauptmenü
-
----------------------
---- view_Settings ---
----------------------
+-78- Bild (Hintergrundbild)
+[XVII] Regelwerk-Maske
 [II] Einstellungen
-
-------------------
---- view_Login ---
-------------------
 [III] Login-Maske
-
----------------------
---- view_NewGame ---
----------------------
 [V] Neues_Spiel-Maske
-
----------------------
---- view_Continue ---
----------------------
 [IV] Spiel_Fortsetzen-Maske
 
 ----------------------
 --- view_Scorelist ---
 ----------------------
 [VI] Bestenliste 
+-78- Bild (Hintergrundbild)
 
 -----------------------
 --- view_Friendlist ---
 -----------------------
 [VII] Freundesliste
+-78- Bild (Hintergrundbild)
 
 -----------------
 --- view_Shop ---
 -----------------
 [VIII] Shop
+-78- Bild (Hintergrundbild)
 
 -----------------
 --- view_Game ---
@@ -333,49 +309,22 @@ Jenifer Prochnow
 [XIX] Navigationsleiste
 -13- Schaltfläche (Spieler wird abgemeldet)
 -14- Schaltfläche (Spiel wird beendet)
--77- Schaltfläche (öffnet Hauptmenü)
-
----------------------------
---- view_ActionsMenu ---
----------------------------
+-67- Link (öffnet Hauptmenü)
+[XVII] Regelwerk-Maske
 [XIII] Aktionsmenü
-
-------------------
---- view_Event ---
-------------------
 [XIV] Ereignis-Maske
-
-----------------------
---- view_Scorecard ---
-----------------------
 [XV] Wertungs-Maske
-
----------------------
---- view_Finished ---
----------------------
 [XVI] Spielende-Maske
-
----------------------
---- view_Licenses ---
----------------------
 [XII] Streckenlizenzen-Maske
-
--------------------------
---- view_Stock_Market ---
--------------------------
 [X] Aktienmarkt-Maske
 [XI] Aktie_Einzelansicht
 
--------------------------
---- view_Instructions ---
--------------------------
-[XVII] Regelwerk-Maske
 
 -------------------------
 --- view_Registration ---
 -------------------------
 [XVIII] Registrierung
-
+-78- Bild (Hintergrundbild)
 
 --> 
 
@@ -407,14 +356,14 @@ Jenifer Prochnow
 			<LoginMaske> 
 				<Spieltitel>
 				<Eingabeaufforderung> <!-- Benutzername und Passwort werden abgefragt. -->
-					<Zwei Textfelder> <!-- eines sichtbar, eines mit ***** Anzeige> -->
+					<Zwei Überschrifter> <!-- eines sichtbar, eines mit ***** Anzeige> -->
 				<Drei Schaltflächen> <!-- "Login", "Registrieren", "Beenden"-->
 				
 			<Startmenü> <!-- + Tabelle mit auswählbaren Schaltflächen -->
 				<Fortfahren> <!-- lässt Spieler aus mehreren Spielständen wählen -->
 				<Neues Spiel> <!-- Neuer Spielstand wird geladen-->
 					<Eingabeaufforderung> <!-- Spieler gibt die Anzahl der gewünschten Gegner ein -->
-					<Textfeld mit zwei Buttons> <!-- Benutzernamen von gewünschten Gegnern eingeben und/oder Zufallsgegner per Button auswählen. Bestätigen --> 
+					<Überschrift mit zwei Buttons> <!-- Benutzernamen von gewünschten Gegnern eingeben und/oder Zufallsgegner per Button auswählen. Bestätigen --> 
 					<Tabelle><!--Zeigt bisher ausgewählte Gegner an-->
 					<2 Buttons> <!-- Spiel starten oder zurück -->
 				<Einstellungen> <!-- <Lautstärke der Hintergrundmusik und Soundeffekte einstellen/ Art der Benachrichtigung festlegen -->
@@ -575,14 +524,14 @@ Wenn Sie meinen, dass auf eine Ansicht mit Log-In gewechselt werden soll, dann i
 
 Prüfen Sie bitte für die genannten Schaltflächen, ob es sich tatsächlich um Schaltflächen oder doch um andere struktruelle Elemente handelt.
 
-== 2.3.) "Textfelder" ==
-Es gibt keine Textfelder als strukturelle Elemente. Es gibt dagegen Überschriften, Absätze und viele andere, die dafür genutzt werden können, um Texte zu strukturieren. Leider ist das manchmal auch im Skript nicht klar genug formuliert und in Gesprächen benutze ich gelegentlich diesen Ausdruck. Daneben gibt es noch verschiedene input-types, die für Eingaben von der Tastatur genutzt werden können.
+== 2.3.) "Überschrifter" ==
+Es gibt keine Überschrifter als strukturelle Elemente. Es gibt dagegen Überschriften, Absätze und viele andere, die dafür genutzt werden können, um Texte zu strukturieren. Leider ist das manchmal auch im Skript nicht klar genug formuliert und in Gesprächen benutze ich gelegentlich diesen Ausdruck. Daneben gibt es noch verschiedene input-types, die für Eingaben von der Tastatur genutzt werden können.
 
 == 2.4.) Hinweis auf Labels ==
--21- Textfeld (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
+-21- Überschrift (Fordert Spieler dazu auf, seine Nutzerdaten einzugeben)
 -22- Eingabefeld (für Nutzernamen)
 
-Wenn Sie innerhalb eines Formulars ein Eingabefeld haben, dann benötigen Sie ein Label, kein "Textfeld", um Nutzern anzuzeigen, welche Eingaben erwartet werden.
+Wenn Sie innerhalb eines Formulars ein Eingabefeld haben, dann benötigen Sie ein Label, kein "Überschrift", um Nutzern anzuzeigen, welche Eingaben erwartet werden.
 
 == 2.5.) Hinweis zu "Speicherständen" ==
 -26- Tabelle 4x3 (3 Spielstände werden aufgelistet und können ausgewählt werden: Datum|Uhrzeit|Gegneranzahl|Name des Spielers, der an der Reihe ist)
@@ -590,12 +539,12 @@ Wenn Sie innerhalb eines Formulars ein Eingabefeld haben, dann benötigen Sie ei
 Nur zur Sicherheit folgender Hinweis: Speicherungen von Partien finden gewissermaßen automatisch auf dem Server statt. Wenn eine Partie mit mehereren Spielern stattfindet, dann müssen die für eine Fortsetzung alle online und eingeloggt sein, denn es soll keinesfalls so sein, dass für eine Mehrspielerpartie mehrere Spieler an einem Rechner sitzen.
 
 == 2.6.) Ziel dieses Aufgabenteils: Vermeidung von Redundanzen ==
--32- Textfeld (Inhalt: "Bestenliste")
+-32- Überschrift (Inhalt: "Bestenliste")
 -33- Tabelle: Anzahl aller Spieler x 4: Jede Zeile ist eine Schaltfläche (Auflistung aller Spieler: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
 -34- Schaltfläche (Jemanden zur Freundesliste hinzufügen)
 -35- Suchfeld (Zum Suchen nach einem bestimmten Platz/ Benutzernamen)
 
--36- Textfeld (Inhalt: "Freundesliste")
+-36- Überschrift (Inhalt: "Freundesliste")
 -37- Tabelle: Anzahl aller Freunde x 4 (Auflistung aller Freunde: Platz|Nutzername|Siegpunkt Durchschnitt|Siegpunkte gesamt)
 -38- Schaltfläche (Jemanden von der Freundesliste entfernen)
 -39- Suchfeld (Spieler kann einen Nutzernamen eingeben, um eine Person zu finden)
