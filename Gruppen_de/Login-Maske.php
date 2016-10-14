@@ -1,7 +1,3 @@
-
-<!doctype html>
-
-<html lang=de>
 <img></img><!-- Hintergrundbild -->	
 <form action= ...><!-- php-Adresse: Programm, das prüft ob der Nutzername vorhanden ist und ob das Passwort dazu passt-->
 <summary>Bitte geben Sie Ihre Nutzerdaten ein.
@@ -13,7 +9,7 @@
 </summary>
 		
 </form>
-</html>
+
 		
 		
 <!--

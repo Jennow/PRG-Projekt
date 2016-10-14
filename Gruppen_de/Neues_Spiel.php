@@ -1,22 +1,11 @@
-<!doctype html>
 
-<html lang=de>
-  
-	<head>
-		<meta charset=utf-8>
-		<title>Neues Spiel</title> 
-	</head>
- 
-	<body>
-		<header>
 			<h1>Neues Spiel</h1>
-			<p> Bitte melden Sie sich an, bevor Sie spielen </p>
-		</header>
-		
-		
-		<main>
 			<img></img><!-- Hintergrundbild -->
+			
+		<form>
 			<table> <!-- Die verfügbaren Spielmodi werden aufgelistet --></table>
+			
+			
 			<input type=radio value= 1Gegner onclick=function()>1 Gegner</input>
 			<input type=radio value= 3Gegner  onclick=function()>3 Gegner</input>
 			<input type=radio value= 5Gegner  onclick=function()>5 Gegner</input>
@@ -25,16 +14,7 @@
 			<input type=radio value= Fremde onclick=function()>Fremde</input>
 			
 			<br>
-			<a href=MainMenu.html><input type="reset" value="Zurück">
-			<input type="submit" value= "Weiter">
-		</main>
+			<a href=Spielfeld.php><input type="submit">
+		</form>
 		
-		<aside>	 
-		</aside>
-		
-		<footer>
-		</footer>
-		
-	</body>
- 
-</html>
+		<a href=Hauptmenu.php><input type="reset" value="Zurück">

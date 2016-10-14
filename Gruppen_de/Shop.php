@@ -1,36 +1,41 @@
-<!doctype html>
+<img></img><!-- Hintergrundbild -->
 
-<html lang=de>
-  
-	<head>
-		<meta charset=utf-8>
-		<title>Shop</title> 
-	</head>
- 
-	<body>
-		<header>
-			<h1>Shop</h1>
-		</header>
+
+ <!-- Auflistung aller Spielmodi, Extras etc. als Schaltflächen. -->
+<table>
+			<tr>
+				<td>Items</td>
+			</tr>
+			
+			<tr>
+				<?php
+					$anzahlItems = 50; // Wert aus Datenbank
+					echo("Shop");
+					echo("<table>");
+					for ($i =0; $i <$anzahlItems; $i++)
+					{
+						echo("<tr>
+								<td>ItemName</td> <!-- Wert aus Datenbank -->
+								<td>ItemPreis</td> <!-- Wert aus Datenbank -->
+								<td><button id=kaufen label=kaufen>kaufen</button></td>
+							</tr>");
+					}
+					echo("</table>");
 		
+				?>
+			</tr>
 		
-		<main>
-			<img></img><!-- Hintergrundbild -->
-			<table> <!-- Auflistung aller Spielmodi, Extras etc. als Schaltflächen. Nicht verfügbare sind ausgegraut --></table>
-			<input type="button" value= "Zur Freundesliste hinzuf&uumlgen">
+		</table>
+
+	
+			
+			</table>
+			
+			
+			<a href=Hauptmenu.php><button>zurück</button>
 			<br>
-			<a href=MainMenu.html><input type="reset" value="Zurück">
-			<input type="submit" value= "Weiter">
-		</main>
+			
 		
-		<aside>	 
-		</aside>
-		
-		<footer>
-		</footer>
-		
-	</body>
- 
-</html>
 
 <!--
 ===================================
