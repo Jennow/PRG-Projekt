@@ -1,16 +1,22 @@
+
+<!doctype html>
+<html lang=de> <!-- Zum Prüfen der Funktionalität aktuell noch notwendig, wird später in Startseite importiert -->
+
 <img></img><!-- Hintergrundbild -->	
 <form action= ...><!-- php-Adresse: Programm, das prüft ob der Nutzername vorhanden ist und ob das Passwort dazu passt-->
-<summary>Bitte geben Sie Ihre Nutzerdaten ein.
-<input type=text id=username name=username>
-<input type=password id=password name=password>
-<a href=Registration.html">Registrierung</a>
-<input type=submit>
-<input type=reset>
-</summary>
-		
+	<fieldset>
+		<label for=username>Benutzername: </label>
+		<input type=text id=username name=username>
+
+		<label for=passwort>Passwort:</label>
+		<input type=password id=password name=password>	
+	</fieldset>
+	<a href=Registrierung.php>Registrierung</a>
+	<input type=submit>
+	<input type=reset>
 </form>
 
-		
+<html>	
 		
 <!--
 ===================================

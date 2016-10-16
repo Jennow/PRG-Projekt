@@ -1,11 +1,10 @@
 <h1>Freundesliste</h1>
 			<input type= search name="suchen"><input type=submit value=Suchen>
-			<table> <!-- Auflistung aller Spieler, sortiert nach Siegpunkten --></table>
 			
 			<?php
 					$spielerFre = 20; // Wert aus Datenbank
 				
-					echo("<table>");
+					echo("<table>");// Auflistung aller Spieler, sortiert nach Siegpunkten
 					for ($i =0; $i <$spielerFre; $i++)
 					{
 						$j=$i+1;

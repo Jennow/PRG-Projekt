@@ -29,7 +29,7 @@
 			<br>
 			<details>
 			<summary>Spielregeln</summary>
-			<iframe src=Regelwerk-Maske.php></iframe>
+			<iframe src=Regelwerk-Maske.php height=300></iframe>
 			</details>
 			<a href=Login-Maske.php>Abmelden</a><!-- Nutzer soll Abgemeldet werden und zurück zum Login Bereich-->
 		</main>

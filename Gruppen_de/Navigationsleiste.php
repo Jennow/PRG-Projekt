@@ -18,6 +18,7 @@
 		for ($i =0; $i <$anzahlItems; $i++)
 			{
 			echo"<tr>
+			<td>username<td>
 			<td><p style=color:lightblue;>0</td>
 			<td><p style=color:blue;>0</td>
 			<td><p style=color:purple;>0</td>
