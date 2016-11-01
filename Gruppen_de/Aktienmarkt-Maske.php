@@ -1,4 +1,4 @@
-<html>
+
 <h1>Aktienmarkt</h1>
 <table>
 	 <!-- Aktiewerte kommen jeweils aus einer Datenbank -->
@@ -77,7 +77,3 @@
 	</tr>
 </table>	
 		
-		
-		
-	
-</html>

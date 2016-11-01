@@ -1,6 +1,4 @@
 
-<!doctype html>
-<html lang=de> <!-- Zum Prüfen der Funktionalität aktuell noch notwendig, wird später in Startseite importiert -->
 
 <img></img><!-- Hintergrundbild -->	
 <form action= ...><!-- php-Adresse: Programm, das prüft ob der Nutzername vorhanden ist und ob das Passwort dazu passt-->
@@ -16,7 +14,6 @@
 	<input type=reset>
 </form>
 
-<html>	
 		
 <!--
 ===================================
