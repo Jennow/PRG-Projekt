@@ -9,6 +9,7 @@
 		<th>Mitspieler</th>
 		<th>An der Reihe:</th>
 		<th> </th>
+
 		
 		<?php
 			$spielstaende = 6; // Anzahl der aktuell offenen Spielpartien
@@ -27,5 +28,5 @@
 		?>
 	</table>
 </form>
-<a href=Hauptmenu.php><input type="reset" value="Zurück">
-<a href=Spielfeld.php><input type="submit" value= "Weiter">
+<a href='#' onClick="window.close()"><input type="reset" value="Zurück">
+<a href=Spielfeld.php target=spielfeld onClick="window.close() window.open('','spielfeld') "><input type="submit" value= "Weiter"> <!-- Das Popup soll geschlossen und auf der Hauptseite die Spielfeld.php geöffnet werden. So funktioniert das nicht.. -->

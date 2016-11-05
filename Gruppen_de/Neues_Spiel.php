@@ -17,4 +17,5 @@
 			<a href=Spielfeld.php><input type="submit">
 		</form>
 		
-		<a href=Hauptmenu.php><input type="reset" value="Zurück">
+		<a href='#' onClick="window.close()"><input type="reset" value="Zurück">
+		
