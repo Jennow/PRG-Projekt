@@ -1,0 +1,521 @@
+﻿======================================
+=== Projektidee Jennow, 05.10.2016 ===
+======================================
+
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in eine Webanwendung nach einem Vorschlag von Herr Alpers sein.
+
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu verschaffen.
+Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline besitzt. 
+Die Spieler können selbst entscheiden, wie viele und welche Airlines sie unterstützen wollen.
+
+
+### Spielbeginn (Hauptmenü) ###
+- Login/ Logout Bereich (php, Weiterleitung an SQL Datebank)
+- Spielstart: Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten weg. Das Spiel dauert dann nicht so lange. Es kann mit Freunden, fremden Mitspielern oder allein gegen den Computer gespielt werden. 
+- Bestenliste (Datenbank SQL)
+- "Shop" um Siegpunkte einzulösen
+- Suchfunktion um Freunde zu finden
+- Freundesliste, aus der man seinen Wunschgegner wählen kann
+
+### Spielablauf ###
+Es gibt:
+- 10 Airlines denen je ein Heimatflughafen, ein Aktienwert in Geld und einer in Siegpunnkten zugeordnet ist:
+	Air Amigos (Frankfurt);	Rio Grande Southern Europe (Rom); Lucky Hans Airways (Wien);
+	Days Of Flying Wonders (Paris);	Brooms Bewitched (Berlin); Jolly Roger Airships (Ankara)
+	FF Flys (Stockholm); It’s Funagain To Fly (Athen); Flying Is Simply Fun (London); White Winds (Moskau)
+- Airline Air Abacus, die keinen Heimatflughafen besitzt
+- Weitere Flughäfen ohne Airline
+- Strecken "verbinden" je zwei Flughäfen miteinander 
+- Für jede Strecke gibt es drei Streckenlizenzen mit verschiedenen Preisen. Der Preis ist aber der einzige Unterschied. (Angebot-Nachfrage)
+- Liste aller verfügbaren und bereits gekauften Streckenlizenzen vom jeweiligen Flughafen
+- Aktienmarkt, in dem zufällige Aktien zum Kauf bereit stehen
+- Aktionsmenü
+
+Für jeden Spieler seperat:
+- Übersichten über Aktien, die sich in seinem Besitz befinden
+- und über diejenigen, die die Gegner sichtbar ausgelegt haben
+- Kontostand (Geld und Siegpunkte) 
+- Anzeige welcher Spieler aktuell an der Reihe ist. 
+
+
+Zu Beginn erhält jeder Spieler ein Startkapital und Aktien.
+Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
+
+Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
+ 
+A) Eine oder zwei Streckenlizenzen für eine Airline der Wahl kaufen und eine zufällige Aktie erhalten
+B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
+C) Eine „Air Abacus“ Aktie gegen eigene Aktien tauschen
+D)  8 Mio von der Bank erhalten	
+
+Im Spielverlauf gibt es drei Wertungsrunden.
+Je nach Anzahl und Wert der Aktien, die sie besitzen, werden Siegpunkte an die Spieler verteilt.
+Vom Wert einer Airline hängt auch der Preis der Aktien ebendieser ab. Die Airlines verändern ihren Wert je nach Anzahl ihrer Streckenlizenzen. 
+Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall (oder -anstieg) einer Aktie auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen. 
+Die Ausnahme ist Air Abacus, ihr Wert bleibt immer gleich (Relativ hoch).
+
+#### Spielende ####
+Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+
+Die Siegpunkte werden in einer großen, globalen Bestenliste gespeichert. 
+Nach jedem Spiel wird der Durchschnitt der Siegpunkte pro Spiel errechnet. Anhand dessen kann man sich mit anderen Spielern vergleichen. 
+Außerdem werden die Punkte aller Spiele zu einem Gesamtpunktestand zusammenaddiert. 
+Hat man einen bestimmten Gesamtpuktestand erreicht, kann man neue Spielmodi (z.B "auf Zeit" oder Team-Spiele) oder andere Extras freischalten, mit denen man sich für begrenzte Zeit einen Vorteil verschaffen kann (z.B Höhere Wahrscheinlichkeit für gute Aktien oder Fähigkeit, verdeckte Aktien der Gegner zu sehen). 
+
+### Interaktionen zwischen Spieler und Spiel ###
+- Generell hat jeder Kauf einer Streckenlizenz einen Einfluss auf den zugehörigen Aktienwert. Somit ändert sich dann der Spielverlauf, da alle Spieler auf den Aktienkurs reagieren müssen.
+- Das Spielverhalten von Nutzern wird in ihrem Profil abgespeichert und dann von einem computergesteuerten Gegenspieler adaptiert, gegen den man im Einzelspieler-Modus antreten kann. 
+- Im Einzelspieler-Modus lassen sich verschiedene Schwierigkeitsstufen auswählen.
+- Anhand der gespeicherten Informationen über Spielverhalten und Spielerfolge (Durchschnittspunktzahl) werden auch automatisch passende Gegner gefunden, wenn man im Startmenü "fremde Mitspieler" auswählt
+
+
+
+
+======================================
+=== Projektidee Jennow, August 2016 ===
+======================================
+
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
+
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu verschaffen.
+Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline besitzt. 
+Die Spieler können selbst entscheiden, wie viele und welche Airlines sie unterstützen wollen.
+
+
+### Spielbeginn (Hauptmenü) ###
+- Login/ Logout Bereich
+- Spielstart: Die Anzahl der Gegner kann selbst ausgewählt werden. Bei weniger Mitspielern fallen bestimmte Spielkomponenten weg. Das Spiel dauert dann nicht so lange. Es kann mit Freunden oder mit fremden Mitspielern gespielt werden.
+- Bestenliste
+- "Shop" um Siegpunkte einzulösen
+- Suchfunktion um Freunde zu finden
+- Freundesliste, aus der man seinen Wunschgegner wählen kann
+
+
+### Spielablauf ###
+Es gibt:
+- 10 Airlines denen je ein Heimatflughafen, ein Aktienwert in Geld und einer in Siegpunnkten zugeordnet ist:
+	Air Amigos (Frankfurt);	Rio Grande Southern Europe (Rom); Lucky Hans Airways (Wien);
+	Days Of Flying Wonders (Paris);	Brooms Bewitched (Berlin); Jolly Roger Airships (Ankara)
+	FF Flys (Stockholm); It’s Funagain To Fly (Athen); Flying Is Simply Fun (London); White Winds (Moskau)
+- Airline Air Abacus, die keinen Heimatflughafen besitzt
+- Weitere Flughäfen ohne Airline
+- Strecken "verbinden" je zwei Flughäfen miteinander 
+- Für jede Strecke gibt es drei Streckenlizenzen mit verschiedenen Preisen. Der Preis ist aber der einzige Unterschied. (Angebot-Nachfrage)
+- Liste aller verfügbaren und bereits gekauften Streckenlizenzen vom jeweiligen Flughafen
+- Aktienmarkt, in dem zufällige Aktien zum Kauf bereit stehen
+- Aktionsmenü
+
+Für jeden Spieler seperat:
+- Übersichten über Aktien, die sich in seinem Besitz befinden
+- und über diejenigen, die die Gegner sichtbar ausgelegt haben
+- Kontostand (Geld und Siegpunkte) 
+- Anzeige welcher Spieler aktuell an der Reihe ist. 
+
+
+Zu Beginn erhält jeder Spieler ein Startkapital und Aktien.
+Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
+
+Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
+ 
+A) Eine oder zwei Streckenlizenzen für eine Airline der Wahl kaufen und eine zufällige Aktie erhalten
+B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
+C) Eine „Air Abacus“ Aktie gegen eigene Aktien tauschen
+D)  8 Mio von der Bank erhalten	
+
+Im Spielverlauf gibt es drei Wertungsrunden.
+Je nach Anzahl und Wert der Aktien, die sie besitzen, werden Siegpunkte an die Spieler verteilt.
+Vom Wert einer Airline hängt auch der Preis der Aktien ebendieser ab. Die Airlines verändern ihren Wert je nach Anzahl ihrer Streckenlizenzen. Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall (oder -anstieg) einer Aktie auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen. Die Ausnahme ist Air Abacus, ihr Wert bleibt immer gleich (Relativ hoch).
+
+#### Spielende ####
+Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+
+Die Siegpunkte werden in einer großen, globalen Bestenliste gespeichert. 
+Nach jedem Spiel wird der Durchschnitt der Siegpunkte pro Spiel errechnet. Anhand dessen kann man sich mit anderen Spielern vergleichen. (So werden auch automatisch passende Gegner gefunden, wenn man im Startmenü "fremde Mitspieler" auswählt). 
+Außerdem werden die Punkte aller Spiele zu einem Gesamtpunktestand zusammenaddiert. 
+Hat man einen bestimmten Gesamtpuktestand erreicht, kann man neue Spielmodi (z.B "auf Zeit" oder Team-Spiele) oder andere Extras freischalten, mit denen man sich für begrenzte Zeit einen Vorteil verschaffen kann (z.B Höhere Wahrscheinlichkeit für gute Aktien oder Fähigkeit, verdeckte Aktien der Gegner zu sehen). 
+
+﻿======================================
+=== Projektidee Jennow, 2016-06-27 ===
+======================================
+
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
+
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu verschaffen. 
+Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline besitzt.
+
+Es gibt ein Spielfeld, auf dem sich Namen für Flughäfen befinden, die anklickbar sind und dann eine Liste aller verfügbaren und bereits gekauften Streckelizenzen vom jeweiligen Ort anzeigen. 
+Die Strecken "verbinden" je zwei Flughäfen miteinander (was bedeutet, dass wenn z.B Ort A in der Liste von Ort B steht, steht Ort B auch in der Liste von Ort A ).
+Für jede Strecke gibt es mehrere Fluglizenzen mit verschiedenen Preisen. 
+Jede Airline beginnt bei ihrem Heimatflughafen.
+
+Zudem werden dem Spieler Aktienmarkt, Übersichten über die Aktien, die sich in seinem Besitz befinden und über diejenigen, die die Gegner sichtbar ausgelegt haben, sein Kontostand (Geld und Siegpunkte) und das Aktionsmenü angezeigt. 
+Außerdem gibt es eine Anzeige, die Information darüber gibt, welcher Spieler aktuell an der Reihe ist. 
+
+Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden, je nach Anzahl und Wert der Aktien, die sie besitzen.
+Vom Wert der Airline hängt auch der Preis der Aktien ab. Die Airlines verändern ihren Wert je nachdem, wie viele Streckenlizenzen von ihnen existieren. 
+Außerdem gibt es einen Zufallsgenerator, der ab und zu einen unerwarteten Wertabfall (oder -anstieg) einer Aktie auslösen kann, worauf die Spieler reagieren, bzw. sich strategisch vorbereiten müssen.
+
+Die Anzahl der Gegner kann selbst ausgewählt werden. 
+Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das Spiel nicht so lange dauert.
+Das Spiel kann mit Freunden oder mit fremden Mitspielern gespielt werden.
+Zu Beginn erhält jeder Spieler ein Startkapital und Aktien. 
+Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
+
+### Spielablauf ###
+Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
+ 
+A) Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
+B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
+C) „Air Abacus“ Aktien gegen eine eigene Aktie tauschen
+D)  8 Mio von der Bank erhalten											
+	
+#### Spielende ####
+Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+
+Die Siegpunkte werden in einer großen, globalen Bestenliste gespeichert. 
+Nach jedem Spiel wird der Durchschnitt der Siegpunkte pro Spiel errechnet, anhand dessen man sich mit anderen Spielern vergleichen kann. (Anhand dieses Punktestandes werden auch automatisch passende Gegner gefunden, wenn man im Startmenü "fremde Mitspieler" auswählt). 
+Außerdem werden die Punkte aller Spiele zu einem Gesamtpunktestand zusammenaddiert. 
+Hat man einen bestimmten Gesamtpuktestand erreicht, kann man neue Spielmodi (z.B "auf Zeit" oder Team-Spiele) oder andere Extras freischalten, mit denen man sich für begrenzte Zeit einen Vorteil verschaffen kann (z.B Höhere Wahrscheinlichkeit für gute Aktien oder Fähigkeit, verdeckte Aktien der Gegner zu sehen).
+
+﻿======================================
+=== Projektidee Jennow, 2016-06-09 ===
+======================================
+
+Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel nach einem Vorschlag von Herr Alpers sein.
+
+In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu verschaffen. 
+Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline besitzt.
+
+Im Hintergrund befindet sich das Spielfeld, das die Karte Europas zeigt, auf der sich Flugzeuge fortbewegen und so den Wert der zugehörigen Airline steigern können. 
+Die Strecken verbinden je zwei Flughäfen miteinander. 
+Für jede Strecke gibt es mehrere Fluglizenzen mit verschiedenen Preisen. 
+Jede Airline beginnt bei ihrem Heimatflughafen.
+
+Im Vordergrund sieht der Spieler den Aktienmarkt, Übersichten über die Aktien, die sich in seinem Besitz befinden und über diejenigen, die die Gegner sichtbar ausgelegt haben. 
+Außerdem wird ihm noch sein Kontostand (Geld und Siegpunkte) und das Aktionsmenü angezeigt. 
+Zur Platzersparnis (besonders auf Smartphones) erscheinen einige der Anzeigen erst nach dem Klick auf einen zugehörigen Button. 
+Außerdem gibt es eine Anzeige, die Information darüber gibt, welcher Spieler aktuell an der Reihe ist. 
+Ist man selbst an der Reihe, wird das, wenn man sich außerhalb des Spiels befindet mittels Pop-Up Mitteilungen bzw. E-Mails kommuniziert. 
+Im Spielverlauf gibt es drei Wertungsrunden, in denen Siegpunkte an die Spieler verteilt werden, je nach Anzahl und Wert der Aktien, die sie besitzen. 
+
+Die Anzahl der Gegner kann selbst ausgewählt werden. 
+Bei weniger Mitspielern fallen bestimmte Spielkomponenten und weg, so dass das Spiel nicht so lange dauert.
+Das Spiel kann mit Freunden oder mit fremden Mitspielern gespielt werden.
+Zu Beginn erhält jeder Spieler ein Startkapital und Aktien. 
+Man kann Aktien geheim halten oder für die Gegner sichtbar machen.
+
+### Spielablauf ###
+Ist ein Spieler an der Reihe, erscheint das Aktionsmenü mit vier Schaltflächen (Hier A,B,C,D)
+ 
+A) Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
+B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
+C) „Air Abacus“ Aktien gegen eine eigene Aktie tauschen
+D)  8 Mio von der Bank erhalten											
+	
+#### Spielende ####
+Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+
+======================================
+=== Projektidee Jennow, 2016-04-06 ===
+======================================
+
+ Mein Projekt wird eine Umwandlung des Brettspiels Airlines Europe in ein Computerspiel sein.
+-In diesem Spiel geht es darum, sich durch den Besitz von Aktien verschiedener Airlines gegenüber seinen Gegnern einen Vorteil zu verschaffen. 
+-Das Gewinnen ist abhängig von dem Wert der Airlines und dem Anteil an Aktien, die der Spieler von der jeweiligen Airline besitzt.
+ 
+-#### Genauere Erklärung des Computerspiels ####
+-
+-Es gibt:
+--	ein Spielfeld mit vorgegebenen Heimatflughäfen, Fluglinien und Streckenlizenzen (angelehnt an die Karte Europas und das
+-	europäische Flugnetz)
+---> 	Flugzeugsymbol auf einer Streckenlizenz symbolisiert den Kauf ebendieser
+--	Eine Bank, die Geld verleiht und auch bankrottgehen kann
+--	Pro Spieler ein Konto für Spielgeld in Mio + Ein Spielgeldkonto für die Bank 
+--	Reguläre Airlines (durch Farbe identifizierbar) + Position des Heimatflughafens auf dem Spielfeld + zugehörige Aktien 
+-	+ zugehörige
+-  	Anzahl Flugzeugsymbole, die zur Verfügung stehen:
+--->	Anz. Aktien u. Flugzeugsymbole: 16x gelb, 15x blau, 14x violett, 13x rot, 11x schwarz, 10x braun, 9x grün, 9x orange, 8x grau,
+-	 7x weiß
+--	"Air Abacus" = Airline ohne Flugzeuge (Aktienwert konstant) + 20 zugehörige Aktien
+--	Bonusverbindungen für die 4 Airlines mit den wenigsten Aktien (Steigert den Wert der Airline im Aktienmarkt)
+--	Pro Spieler ein Konto für die Aktien in seinem Besitz
+--	Eine Aktienkurs-Anzeige in der sich die Airlines befinden und im Wert aufsteigen können
+--	Einen Aktienmarkt in dem immer 5 sichtbare Aktien und eine zufällige Aktie zur Verfügung stehen
+---> 	Wurde eine Aktie aus dem sichtbaren Markt genommen, wird sie sofort mit einer zufälligen Aktie aufgefüllt
+--	Pro Spieler ein Konto für Siegpunkte für die Endwertung
+--	Drei Wertungsrunden
+-
+-Das Spiel wird mit 1-4 virtuellen Gegnern gespielt. Diese sollen automatisch für den Gewinn des Spiels kluge Entscheidungen treffen
+-(Evtl. mit Schwierigkeitsgrad?) Der Spieler sucht sich zu Beginn die Anzahl der Gegner aus und dementsprechend ändern sich einige
+-Konditionen des Spiels:
+-- Pro Spieler werden 30 Mio im Spiel verwendet 								                                 
+-- Bei 4 Gegnern wird mit allen Airlines gespielt, 								                        bei 3 fällt Gelb weg, 												      
+-  bei 2 fallen Gelb und Blau weg,											         
+-  bei einem Gegner fallen Gelb, Blau und Violett weg
+-
+-#### Spielvorbereitungen ####
+-
+-- 	Für den Spielablauf wird eine Reihenfolge der Spieler festgelegt.
+--	Der Startspieler wird per Zufall ausgesucht. Er erhält 1 Siegpunkt, der zweite Spieler 2, etc.
+--	Jeder Spieler erhält von dem verwendeten Geld 8 Mio, der Rest wird der Bank zugewiesen
+--	Jeder Spieler erhält 8 zufällige Aktien, von denen er 2 (von verschiedenen Airlines) auswählt und für die anderen sichtbar
+-	macht
+--->	Hat der Spieler zufällig nur Aktien einer Airline erhalten, wird der Prozess bei ihm wiederholt bis mindestens 2 verschiedene
+-	Airlines vertreten sind.
+--	5 zufällige Aktien werden in dem Aktienmarkt, sichtbar für alle Spieler, abgelegt
+--	Die restlichen Aktien werden später zum Auffüllen des Aktienmarktes und für den Zufallserwerb einer Aktie benötigt
+
+ ### Spielablauf ###
+ 
+- Jeder Spieler wählt der Reihe nach immer eine von 4 Aktionen aus:
+
+A) Eine oder zwei Streckenlizenzen kaufen und eine Aktie erhalten
+-- Die Strecken verbinden je zwei Flughäfen miteinander
+-- Für jede Strecke gibt es mehrere Lizenzen mit verschiedenen Preisen
+ - Man kauft automatisch die günstigste verfügbare Lizenz auf einer Strecke
+-- Jede Airline beginnt bei ihrem Heimatflughafen
+-- Hat eine Airline eine Lizenz für Verbindung zu einem Flughafen, kann sie von diesem alle durch Fluglinien mit ihm verbundenen 
+-  Flughäfen ansteuern und für diese Strecken ebenfalls Lizenzen erwerben
+-- Man muss keine Aktien einer Airline besitzen um eine Streckenlizenz für sie zu kaufen
+-- Die Airline steigt in der Aktienkurs-Anzeige um die Anzahl der Punkte, die durch den Kaufpreis der Streckenlizenz geteilt durch Mio
+-  angegeben wird.
+-- Wird eine der 4 Bonusverbindungen mit der passenden Airline gekauft, erhält diese Airline zusätzlich Bonuspunkte in der
+-  Aktienkurs-Anzeige.
+- Als Bonus für Aktion A sucht der Spieler sich eine Aktie aus dem Aktienmarkt (inkl. Zufallsaktie) aus.
+ 
+ B) Eigene Aktien für Gegner sichtbar machen und Dividende erhalten	
+ - Entweder beliebig viele Aktien einer Airline oder jeweils eine Aktie von 2 Airlines 				
+ - Bonus: 2 Mio pro sichtbar gemachter Aktie
+ 
+ -C) „Air Abacus“ Aktien gegen eine eigene Aktie (sichtbar oder/und verdeckt) tauschen
+- Entweder 1 beliebige Aktie gegen 1 „Air Abacus“ Aktie							
+ - Oder 3 beliebige Aktien gegen 2 „Air Abacus“ Aktien
+ 	
+ D)  8 Mio von der Bank erhalten		
+ -- Hat die Bank nicht mehr genügend Geld um das auszuzahlen, wird ein Rettungsfond eingerichtet:		
+  - Jeder Spieler behält 8 Mio und gibt den Rest an die Bank							
+ - Der Spieler, der das Geld von der Bank erfragt hat, erhält dieses nun aus dem Rettungsfond	
+ 
+ ### Wertung ###
+-
+-- Drei Mal im Spielverlauf findet eine Wertung nach Erfüllung folgender Bedingungen statt:	                                         
+-  1: nachdem ein Viertel der Aktien im Aktienmarkt verwendet wurden 									
+-  2: nachdem die Hälfte der Aktien im Aktienmarkt verwendet wurden 
+-  3: wenn nur noch 10 unsichtbare Aktien im Aktienmarkt sind
+-
+-Ausgelöst wird die Wertung, wenn ein Spieler nach dem Erfüllen der Bedingung versucht, 
+-erneut eine Aktie aus dem Aktienmarkt zu nehmen.
+ 
+ Aktienmarkt leeren
+ - Jeder Spieler wählt eine der sichtbaren Aktien aus und nimmt sie in die eigenen Aktien auf.			           
+-- Der Spieler der die Wertung ausgelöst hat, beginnt   							                                 
+-- Abschließend werden übrig gebliebene Aktien aus dem Spiel entfernt und der sichtbare 
+-  Aktienmarkt wird wieder mit 5 Aktien aufgefüllt.
+ 
+ Airlines werten
+-- Pro Airline wird die Position der Spieler ermittelt, d.h. ob sie die meisten, zweitmeisten, usw. Aktien besitzen.
+-- Dem Wert der Aktie wird eine bestimmte Anzahl an Siegpunkten für die jeweiligen Positionen zugeordnet.
+-- Nach diese beiden Bedingungen erhalten die Spieler Siegpunkte.
+-- Bei gleichen Positionen werden Positionen zusammengezählt, durch die betreffende Spieleranzahl geteilt, ggf. aufgerundet und
+-  dementsprechend Siegpunkt-Chips verteilt.
+ 
+ #### Spielende ####
+ - Das Spiel endet mit dem Ende der 3. Wertung und es gewinnt der Spieler mit den meisten Siegpunkten.
+ 
+===============================================================
+=== Zweiter Aufgabenblock (identisch für alle Studierenden) ===
+===============================================================
+(gelöscht, da im Lernraum für alle einsehbar)
+
+== Notiz Jennow ==
+   Kommentierte Repositorys: julhe/PRGProjekt1  (17.04.2016)
+   			     korppikuolema/Projekt1 (19.04.2016)
+   			     laGranada/ProjektA (22.04.2016)
+   			     joelkrauleidies/Projekt1 (22.04.2016)
+			     KingBradley97/ Projekt-A (27.04.2016)
+   
+==Feedback Jonathan==
+Insgesammt sieht das sehr gut aus. Allerdings kann ich mir vorstellen, dass es ziemlich schwierig ist eine KI zu erstellen. Eventuell ist es da einfacher das ganze als Multiplayer zu konzipieren.
+
+==Feedback Jaacii==
+Stimme da Jonathan zu. Klingt alles sehr gut, aber eine KI kann kompliziert werden. 
+
+===================================
+=== Feedback Alpers, 2016-04-28 ===
+===================================
+
+Ein wichtiger Hinweis am Anfang: Bitte löschen Sie keine Kommentare, damit erkennbar ist, wie die Entwicklung des Projekts abgelaufen ist. In Ihrem Fall hatte ich beispielsweise vorgeschlagen, dass Sie dieses Spiel als Vorlage verwenden. Momentan wirkt es auf Außenstehende, als hätten Sie sich dafür entschieden und ohne Absprache mit der Arbeit am Projekt begonnen.
+
+Leider ist Ihre Beschreibung bei weitem zu umfangreich und entspricht nicht dem, was in Kap. 5 vorgegeben ist. Hier ein Beispiel:
+-> "Es gibt: Eine Bank, die Geld verleiht und auch bankrottgehen kann"
+Das klingt insbesondere zu sehr nach einer Beschreibung aus einem Brettspiel. Und für die Entwicklung der strukturellen Elemente ist es leider nicht hilfreich.
+
+Das führt mich auch direkt zu einem wichtigen Hinweis: Es ist nicht Ihre Aufgabe, das genannte Spiel 1:1 als Computerspiel umzusetzen, sondern basierend auf diesem Spiel ein webbasiertes Spiel zu konzipieren.
+
+Wertung 2: Projektbeschreibung: gesamt: 3 / 10
+- Pro Interaktionsmöglichkeit: wegen der Masse an Einträgen unklar.
+- Knappe aber klare Beschreibung: 3 (wegen der Zusammenfassung, für die eigentliche Beschreibung: 0 weil nicht als Basis für die nächsten Arbeitsschritte geeignet.)
+- Werbeslogans u.ä.: 0
+- Designaspekte: 0
+- Voraussetzung bekannten Wissens: 0
+
+Jetzt kommt eine nächste Schwierigkeit: Sie müssen sich überlegen, was Sie alles streichen und was sie alle ergänzen müssen, damit es ein eigenständiges webbasiertes Computerspiel wird. Ihre Aufgabe besteht gerade nicht darin, das Spiel 1:1 umzusetzen, sondern nach persönlicher Vorstellung zusätzliche Interaktionsmöglichkeiten zu schaffen.
+
+Sie müssen hier also insbesondere an Dinge denken, die in einem Brettspiel nicht vorkommen. Ein Log-In oder eine Highscore-Liste wären nur zwei von vielen Möglichkeiten, die hinzukommen. Die direkte Unterhaltung zwischen Spielern muss dagegen im Bedarfsfall anders gelöst werden. Und Aufgaben wie das Aufnehmen einer Karte, das verschieben eines Elements auf dem Spielbrett fallen häufig bei Computerspielen unter den Tisch.
+
+Bitte überarbeiten Sie die Beschreibung wie in Kap. 5 vorgegeben. Der Sinn und Zweck dahinter ist der, dass Sie so eine Grundlage haben, auf deren Basis Sie sinnvoll strukturelle Elemente (Aufg. 2) entwickeln können.
+
+===================================
+=== Feedback Alpers, 2016-06-08 ===
+===================================
+
+Leider haben Sie lediglich einen kurzen Satz in die Beschreibung eingefügt. Im letzten Feedback ging es um grundlegende Änderungen an der Beschreibung.
+
+Bitte beachten Sie in diesem Zusammenhang, dass die Beschreibung die Grundlage für die weitere Entwicklung ist. Wenn Sie also trotz des letzten Feedbacks die Beschreibung unverändert lassen und direkt mit der Bearbeitung der strukturellen Elemente weitermachen, dann ist die Auswirkung voraussichtlich die, dass Sie später den Großteil dieser Änderungen wieder löschen müssen.
+
+===================================
+=== Feedback Alpers, 2016-06-10 ===
+===================================
+
+Nachtrag/Korrektur bezüglich Ihrer E-Mail (Zutreffender Hinweis darauf, dass ich Ihre letzten Änderungen an der Beschreibung übersehen hatte): Bitte fügen Sie umfangreiche Änderungen der Beschreibung am Anfang des Dokuments ein. Das steht im Widerspruch zur sonstigen Nutzung von Versionierungssoftware, ist aber sinnvoll, weil so leicht nachvollziehbar ist, wie sich das Projekt im Laufe der Zeit verändert ist. So können Sie zu einem späteren Zeit nochmal ursprüngliche Ideen durchsehen; gelegentlich ist das nützlich, wenn man auf neue Probleme stößt. Wenn Sie einzelne Teile der Beschreibung streichen oder erweitern ist es deshalb immer gut, eine kurze Anmerkung zu verfassen, warum das getan wurde. In professionellen Projekten werden für solche Aufgaben Tools mit den Bezeichnungen "Continouus Integration" und "Continouus Development" verwendet. Ältere Versionen werden auch als "Ticketing System" bezeichnet. Alle beinhalten auch Mittel, um Aufgaben im Team zu verteilen und den Fortschritt des Projekts im Überblick zu behalten. Diese Werkzeuge lernen Sie vielleicht in der Veranstaltung "Software Engineering" kennen.
+
+Jetzt zum eigentlichen Feedback:
+
+(1) An mehreren Stellen wird deutlich, dass Sie zu sehr in Kategorien der Darstellung bzw. des Designs denken. Hinweis: Beim Design geht es immer um die Frage, wie etwas dargestellt bzw. wo es angeordnet wird. Das müssen Sie als angehende Medieninformatikerin von der eigentlichen Softwareentwicklung trennen, weil es die Aufgabe von MediendesignerInnen ist. Deshalb ist die nächste Aufgabe ja auch die Entwicklung der strukturellen Elemente und nicht die Kozeption eines Layouts.
+
+- "Im Hintergrund befindet sich das Spielfeld, das die Karte Europas zeigt, auf der sich Flugzeuge fortbewegen und so den Wert der zugehörigen Airline steigern können." Um das Umzusetzen müssen Sie Animationen programmieren können und die sind nicht Teil des Projekts. Überlegen Sie sich, wie Sie das mit den Mitteln darstellen können, bzw. ob das für die Funktionalität des Spiels wichtig ist.
+
+- "Im Vordergrund sieht der Spieler den Aktienmarkt, Übersichten über die Aktien, die sich in seinem Besitz befinden und über diejenigen, die die Gegner sichtbar ausgelegt haben." Auch hier haben Sie eine Designvorgabe an den Anfang gestellt. Vor allem aber haben Sie hier erneut etwas beschrieben, was Sie mit den Mitteln des Kurses nur schwer werden umsetzen können. Denn Ebenen (denen Sie z.B. in Programmieren 2 in Java tatsächlich bewusst Elemente zuordnen können) haben wir hier nicht behandelt.
+
+- "Zur Platzersparnis (besonders auf Smartphones) erscheinen einige der Anzeigen erst nach dem Klick auf einen zugehörigen Button." Ebenfalls Design, in diesem Fall allerdings der Spezialfall des Responsive Design.
+
+- "Ist man selbst an der Reihe, wird das, wenn man sich außerhalb des Spiels befindet mittels Pop-Up Mitteilungen bzw. E-Mails kommuniziert. " Ebenfalls Design: Wir haben nicht über Pop-Up Fenster gesprochen oder darüber, wie Sie aus einem Spiel heraus E-Mails versenden können. Letzteres können Sie sich nach der Veranstaltung NWI erarbeiten, da Sie erst dann die nötigen Grundlagen haben.
+
+(2) Bei Ihrer Beschreibung fehlt noch der interaktive Teil, also der Teil, in dem Sie erklären, wie das Spiel mit dem Spieler interagiert.
+
+Hier ein Absatz dazu, wofür der Begriff Interaktivität in diesem Projekt steht, weil der Begriff nicht eindeutig ist: Die Schaltflächen, die NutzerInnen verwenden können sind nur die bedienbaren Elemente eines Computerprogramms. Interaktion ist wesentlich mehr als das. Denken Sie beispielsweise daran, wie eine Pokerrunde gespielt wird. Dabei spielt es nämlich eine Rolle, welche Karten abgeworfen wurden. Die Spieler (und bei einem Computerprogramm der Computer) analysieren kontinuierlich das Verhalten der anderen Spieler und ändern Ihren Spielstil in Abhängigkeit davon. Und genau das müssen Sie auch als Teil Ihres Projekts ausarbeiten und in die Projektbeschreibung integrieren.
+
+Wertung 2: Projektbeschreibung: gesamt: 3 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 5
+- Werbeslogans u.ä.: 0 
+- Designaspekte: -2
+- Voraussetzung bekannten Wissens: 0 
+
+===================================
+=== Feedback Alpers, 2016-06-27 ===
+===================================
+
+Leider keine Änderung seit letztem Feedback.
+
+===================================
+=== Feedback Alpers, 2016-07-25 ===
+===================================
+
+Leider müssen Sie immer noch an der Beschreibung weiterarbeiten: Im aktuellen Zustand ist Sie als Basis für die Entwicklung einer Software zu umfangreich. Das hatten Sie in früheren Phasen schon besser umgesetzt.
+
+Schauen wir uns das anhand eines Beispiels an:
+
+"Es gibt ein Spielfeld, auf dem sich Namen für Flughäfen befinden, die anklickbar sind und dann eine Liste aller verfügbaren und bereits gekauften Streckelizenzen vom jeweiligen Ort anzeigen."
+
+Hier sind gleich mehrere Probleme enthalten:
+
+(1) Zu viele Einzelfaktoren innerhalb eines Satzes. Das bewirkt, dass Sie später nicht schnell kontrollieren können, welche Jobs schon erledigt wurden. Zerlegen wir das also mal in einzelne Häppchen:
+
+* Spielfeld, besteht aus:
+- Flughäfen, die anklickbar sind,
+- und dann eine Liste aller verfügbaren
+- und bereits gekauften Streckelizenzen
+- vom jeweiligen Ort anzeigen.
+
+(2) Hier zeigt sich aber gleich, dass Sie bereits an dieser Stelle die Struktur festlegen und das ist schlecht.
+
+Also ändern wir das mal ab:
+
+Im Spiel gibt es eine mehrere Flughäfen.
+Zurzeit sind es die folgenden Flughäfen: 
+...
+Jeder Spieler bekommt einen Startflughafen zugeordnet. 
+(Oder wie wäre es mit einem Erwerb gegen Geld, einer Lotterie, ...?)
+Spieler können Routen zwischen Flughäfen erwerben.
+Für den Erwerb kann Geld verwendet werden. 
+(Wie wäre es noch mit Ansehen oder ähnlichem als alternative Währung?)
+Routen gibt es in unterschiedlichen Qualitätsstufen.
+Diese Qualitätsstufen unterscheiden sich wie folgt: 
+...
+
+Wie Sie sehen ist hier an keiner Stelle zu erkennen, wie das im Spiel optisch umgesetzt wird. Aber genau das ist bei der Beschreibung auch sehr wichtig, weil es bedeutet, dass das Spiel für die unterschiedlichsten Endgeräte angepasst werden kann.
+
+===================================
+=== Feedback Alpers, 2016-10-04 ===
+===================================
+
+Die Beschreibung ist jetzt in einem sehr guten Zustand, um sie als Grundlage für die weitere Entwicklung zu nehmen.
+
+Auf die Umsetzung als verteilte Anwendung gehen Sie zwar nicht weiter ein, aber die ergibt sich implizit durch Log-In und Nutzerverwaltung.
+
+Was noch fehlt ist der Computer als Gegenspieler und hier insbesondere die Adaption des Spielerverhaltens. (Bislang hatte ich die unter dem Begriff der Interaktion zwischen Spieler und Spiel zusammengefasst.)
+
+Wertung 2: Projektbeschreibung: gesamt: 5 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 5
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0
+- Voraussetzung bekannten Wissens: 0 
+
+======================================
+=== Wertung 1: Formale Vorgaben: - ===
+======================================
+- Missachtung der Konventionen für Dateinamen, Verzeichnisstruktur usw. (je -1 Pk.)
+
+=================================================
+=== Wertung 2: Projektentwurf: gesamt: 8 / 10 ===
+=================================================
+- Knappe und klare Stichpunkte 0 bis 2 Pk.: 2 
+- Umfang der eigentlichen Anwendung 0 bis 3 Pk.: 3
+- Aspekte verteilter Anwendungen 0 bis 3 Pk.: 1 (Da Spieleranzahl in der Struktur stark beschränkt.)
+- Aspekte adaptiver Anwendungen 0 bis 2 Pk.: 1
+=== (Malus beim Projektentwurf) ===
+- Werbeslogans u.ä. bis zu 3 Pk. Abzug: 0
+- Design- oder Layoutvorgaben bis zu 5 Pk. Abzug: 0 
+- Voraussetzung bekannten Wissens bis zu 5 Pk. Abzug: 0
+(Dies ist keine abschließende Wertung.)
+
+================================================================
+=== Wertung 3: Ausarbeitung der strukt. Elem. gesamt: 7 / 10 ===
+================================================================
+- Knappe Form 0 bis 3 Pk.: 3
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk., 0 bis 7 Pk.: 4
+=== (Malus bei strukt. Elem.) ===
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. bis zu 5 Pk. Abzug:  0
+(Dies ist keine abschließende Wertung.)
+
+=======================================
+=== Wertung 4: Microservices: 5 / 5 ===
+=======================================
+- für jeden für die Kernanwendung sinnvollen Microservice 1 Pk.: 5 
+=== (Malus bei strukt. Elem.) ===
+- Wenn Micrservices vergessen wurden, die für verteilte adaptive Anwendungen eine Voraussetzung sind, je 1 Pk. Abzug: 0 
+(Dies ist keine abschließende Wertung.)
+
+=========================================
+=== Wertung 5: Ansichten/Views: 4 / 5 ===
+=========================================
+- für jede sinnvolle Ansicht 1 Pk.: 4
+(Dies ist keine abschließende Wertung.)
+
+Aufgabe 6 und 7 setzen voraus, dass in Aufgabe 1 - 5 insgesamt min. 20 Punkte erreicht wurden.
+Tipp: Dennoch ist es sinnvoll, dass Sie Microservices direkt in HTML mit PHP- und MySQL-Anbindung umsetzen. Denn so können Sie erkennen, wo Ihre Planung Schwächen hat.
+
+=================================
+=== Wertung 6: HTML 5: 10 / 10 ===
+=================================
+- Umsetzung pro Microservice je 1 Pk. (max. 10): 10
+- Missachtung von Änderungen von HTML 4.01 zu 5 (-5 bis 0 Pk.): 0
+- Abweichung von den Vorgaben in der strukt.txt (je -1/2 Pk.): 0
+
+====================================
+=== Wertung 7: PHP/MySQL: >1 / 30 ===
+====================================
+
+Damit haben Sie mehr als 35 Punkte und somit bestanden.
